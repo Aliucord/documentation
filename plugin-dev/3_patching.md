@@ -5,11 +5,11 @@ Aliucord uses the ["pine"](https://github.com/canyie/pine) java method hook fram
 You can use it to run your own code before, instead of or after any method of any Discord class
 
 ## Finding the right method to patch
-Refer to [Finding your Way Around Discord](TODO)
+Refer to [Finding Discord Stuff](5_finding_discord_stuff.md)
 
 ## The Basics
 
-Every plugin has its own [Patcher](https://aliucord.github.io/Javadoc/com/aliucord/api/PatcherAPI.html) instance as `patcher` inside your Plugin class
+Every plugin has its own [Patcher](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.api/-patcher-a-p-i/index.html) instance as `patcher` inside your Plugin class
 
 You can add patches using `patcher.patch(method, methodHook)`. This will return a [Runnable](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html)
 that when invoked will remove the patch again. Alternatively, you can simply use `patcher.unpatchAll()` to remove all patches.
@@ -44,7 +44,7 @@ patcher.patch(Magician.class.getDeclaredMethod("applyMagic", Context.class, Stri
 
 Due to Java's method overloads, there can be multiple methods with the same name but different arguments. Thus, it is necessary to specify the argument 
 types of the method. 
-`.class` here simply retrieves the runtime representation of your class which can be used for [Reflection](https://www.oracle.com/technical-resources/articles/java/javareflection.html).
+`.class` here (or `::class.java` if you are using Kotlin) simply retrieves the runtime representation of your class which can be used for [Reflection](https://www.oracle.com/technical-resources/articles/java/javareflection.html).
 You basically just need to take the arguments of the desired method and append `.class` to them!
 
 ##### Reference:
@@ -58,8 +58,11 @@ You basically just need to take the arguments of the desired method and append `
 The [MethodHook](https://github.com/canyie/pine/blob/master/core/src/main/java/top/canyie/pine/callback/MethodHook.java) class describes how the method should be patched.
 Possible methods are `beforeCall` and `afterCall`. To replace the method you can either use `beforeCall` and set the result or use [MethodReplacement](https://github.com/canyie/pine/blob/master/core/src/main/java/top/canyie/pine/callback/MethodReplacement.java)
 
-For convenience, Aliucord provides [PinePatchFn](https://aliucord.github.io/Javadoc/com/aliucord/patcher/PinePatchFn.html) and [PinePrePatchFn](https://aliucord.github.io/Javadoc/com/aliucord/patcher/PinePrePatchFn.html) 
-that take a single lambda method as their only argument.
+For convenience, Aliucord provides the 
+[PinePatchFn](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pine-patch-fn/index.html), 
+[PinePrePatchFn](https://aliucord.github.io/Javadoc/com/aliucord/patcher/PinePrePatchFn.html) and
+[PineInsteadFn](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pine-pre-patch-fn/index.html) 
+classes that take a single lambda method as their only argument.
 
 
 No matter which patch method you decide for, you will always work with the [CallFrame](https://github.com/canyie/pine/blob/19dd53fc9deaf1f571e9a05562d0557e19cd87fc/core/src/main/java/top/canyie/pine/Pine.java#L659-L718)
@@ -80,17 +83,15 @@ the result of the method if any and way more. It behaves a bit differently depen
 
 ### Some Examples
 
-#### Everyone is now called Ven - Instead Patch
+#### Everyone is now called Clyde - Instead Patch
 
 ```java
 import com.aliucord.patcher.PinePrePatchFn;
 
-patcher.patch("com.discord.models.user.CoreUser", "getUsername", new Class<?>[0], new PinePrePatchFn(callFrame -> {
-    callFrame.setResult("Ven");
-});
+patcher.patch("com.discord.models.user.CoreUser", "getUsername", new Class<?>[0], new PineInsteadFn(callFrame -> "Clyde"));
 ```
 
-#### Rename all users named Ven to Nev - AfterPatch retrieving and altering the result
+#### Rename all users named Clyde to Evil Clyde - AfterPatch retrieving and altering the result
 
 ```java
 import com.aliucord.patcher.PinePatchFn;
@@ -98,11 +99,11 @@ import com.discord.models.user.CoreUser;
 
 patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PinePatchFn(callFrame -> {
     var name = (String) callFrame.getResult();
-    if (name != null && name.equalsIgnoreCase("ven")) callFrame.setResult("Nev");
+    if (name != null && name.equalsIgnoreCase("Clyde")) callFrame.setResult("Evil Clyde");
 });
 ```
 
-#### Rename specific User - Retrieving the thisObject and altering the result
+#### Rename specific User - Retrieving the thisObject and skipping the original method if a condition is met
 
 ```java
 import com.aliucord.patcher.PinePrePatchFn;
@@ -111,7 +112,7 @@ import com.discord.models.user.CoreUser;
 patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PinePrePatchFn(callFrame -> {
     var currentUser = (CoreUser) callFrame.thisObject;
     long id = currentUser.getId();
-    if (id == 343383572805058560L) callFrame.setResult("Woah!!");
+    if (id == 343383572805058560L) callFrame.setResult("Not Clyde!!");
 });
 ```
 
