@@ -5,11 +5,12 @@ Aliucord uses the ["pine"](https://github.com/canyie/pine) java method hook fram
 You can use it to run your own code before, instead of or after any method of any Discord class
 
 ## Finding the right method to patch
-Refer to [Finding Discord Stuff](5_finding_discord_stuff.md)
+Refer to [Finding Discord Stuff](6_finding_discord_stuff.md)
 
+## Retrieving private fields / calling private methods inside patches
 ## The Basics
 
-Every plugin has its own [Patcher](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.api/-patcher-a-p-i/index.html) instance as `patcher` inside your Plugin class
+Every plugin has its own [Patcher](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.api/-patcher-a-p-i) instance as `patcher` inside your Plugin class
 
 You can add patches using `patcher.patch(method, methodHook)`. This will return a [Runnable](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html)
 that when invoked will remove the patch again. Alternatively, you can simply use `patcher.unpatchAll()` to remove all patches.
@@ -59,9 +60,9 @@ The [MethodHook](https://github.com/canyie/pine/blob/master/core/src/main/java/t
 Possible methods are `beforeCall` and `afterCall`. To replace the method you can either use `beforeCall` and set the result or use [MethodReplacement](https://github.com/canyie/pine/blob/master/core/src/main/java/top/canyie/pine/callback/MethodReplacement.java)
 
 For convenience, Aliucord provides the 
-[PinePatchFn](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pine-patch-fn/index.html), 
-[PinePrePatchFn](https://aliucord.github.io/Javadoc/com/aliucord/patcher/PinePrePatchFn.html) and
-[PineInsteadFn](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pine-pre-patch-fn/index.html) 
+[PinePatchFn](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pine-patch-fn), 
+[PinePrePatchFn](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pine-pre-patch-fn) and
+[PineInsteadFn](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pine-instead-fn) 
 classes that take a single lambda method as their only argument.
 
 
@@ -83,7 +84,7 @@ the result of the method if any and way more. It behaves a bit differently depen
 
 ### Some Examples
 
-#### Everyone is now called Clyde - Instead Patch
+#### Everyone is now called Clyde - InsteadPatch
 
 ```java
 import com.aliucord.patcher.PinePrePatchFn;
@@ -91,7 +92,7 @@ import com.aliucord.patcher.PinePrePatchFn;
 patcher.patch("com.discord.models.user.CoreUser", "getUsername", new Class<?>[0], new PineInsteadFn(callFrame -> "Clyde"));
 ```
 
-#### Rename all users named Clyde to Evil Clyde - AfterPatch retrieving and altering the result
+#### Rename all users named Clyde to Evil Clyde - AfterPatch
 
 ```java
 import com.aliucord.patcher.PinePatchFn;
@@ -103,7 +104,7 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PinePatchFn(c
 });
 ```
 
-#### Rename specific User - Retrieving the thisObject and skipping the original method if a condition is met
+#### Rename specific User - PrePatch
 
 ```java
 import com.aliucord.patcher.PinePrePatchFn;
@@ -116,7 +117,7 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PinePrePatchF
 });
 ```
 
-#### Hide your typing indicator from others - Do Nothing
+#### Hide your typing indicator from others - DO_NOTHING
 
 ```java
 import com.discord.stores.StoreUserTyping;

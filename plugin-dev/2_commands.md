@@ -5,18 +5,22 @@ made available along with the regular slash commands.
 
 ## The basics
 
-Every plugin has its own [CommandsAPI](https://aliucord.github.io/Javadoc/com/aliucord/api/CommandsAPI.html) made available as `commands` inside your plugin class.
+Every plugin has its own [CommandsAPI](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.api/-commands-a-p-i) 
+made available as `commands` inside your plugin class.
 
-You can register commands using `commands.registerCommand(name, description, options, callback)` and unregister them later either by using `commands.unregisterCommand(commandName)` or via `commands.unregisterAll()`.
+You can register commands using `commands.registerCommand(name, description, options, callback)` and unregister 
+them later either by using `commands.unregisterCommand(commandName)` or via `commands.unregisterAll()`. 
 Commands should be unique, so please use a meaningful command name that won't overlap with other plugins.
 
 Commands are run on a separate thread, so you can do heavy work here, send Http Requests, etc...
 
 Errors are caught and will be presented to the user in a nicely formatted error, but you should still make sure your command never throws errors.
 
-The callback is a lambda function that gets the CommandContext as only argument and should return a [CommandResult](https://aliucord.github.io/Javadoc/com/aliucord/api/CommandsAPI.CommandResult.html) or null to send no reply.
+The callback is a lambda function that gets the CommandContext as only argument and should return a 
+[CommandResult](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.api/-commands-a-p-i/-command-result) or null to send no reply.
 
-Please refer to the [CommandContext Javadoc](https://aliucord.github.io/Javadoc/com/aliucord/entities/CommandContext.html) for the available methods
+Please refer to the [CommandContext Javadoc](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.entities/-command-context) 
+for the available methods
 
 ## CommandOptions
 
