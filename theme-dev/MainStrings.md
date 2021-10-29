@@ -50,3 +50,15 @@ The string for the font URL. The string is located in the "fonts" section in the
 ```
 When done correctly it should look like this in the json
 ![image](https://user-images.githubusercontent.com/84905506/132266358-3d8e34da-622d-49d9-b74a-d7dd1d413ee6.png)
+
+
+<h1 align="center">All links which are allowed for wallpaper/font</h1>
+These are the links allowed to be used with themer, all other links will not work and will not load
+
+* github.com
+* raw.githubusercontent.com
+* gitlab.com
+* cdn.discordapp.com
+* media.discordapp.net
+* i.imgur.com
+* i.ibb.co (*only for you, FrozenPhoton :)* )
