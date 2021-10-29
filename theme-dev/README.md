@@ -16,3 +16,4 @@ This is the Documentation for the Themer Plugin
 * Thanks to Soulz for his research in the font strings
 * Thanks to Riyu for researching whats themable in Light Mode
 * Thanks to Ven for helping me in a few things here and there
+* FOX HOW DO YOU DO THIS???? *-Ven*
