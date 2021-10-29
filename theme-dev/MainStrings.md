@@ -43,7 +43,7 @@ The string for the font URL. The string is located in the "fonts" section in the
   "ginto_regular": "changes nothing for me, you can test it if you want",
   "roboto_medium_numbers": "changes nothing for me, you can test it if you want",
   "sourcecodepro_semibold": "changes nothing for me, you can test it if you want",
-  "whitney_bold": "changes server template names, and "Invite should look like this"",
+  "whitney_bold": "changes server template names, and "Invite should look like this",
   "whitney_medium": "changes message text, channel names, button names, etc",
   "whitney_semibold": "changes selected channel name, DM List names, etc"
 }
