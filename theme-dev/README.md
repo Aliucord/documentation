@@ -9,6 +9,11 @@ This is the Documentation for the Themer Plugin
 * [uikit Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/uikitStrings.md)
 * [Drawable Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/DrawableStrings.md)
 * [Random Things which can change over time and also some resources which might help](https://github.com/GangsterFox/documentation/blob/main/theme-dev/DrawableStrings.md)
+
+<h1 align="Center">Small introduction</h1>
+
+Start by making a theme in the themer plugin settings, give it a good name
+
 <h1 align="Center">Credits</h1>
 
 * Thanks to Fred for fixing my spelling errors
