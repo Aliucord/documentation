@@ -1,7 +1,7 @@
 <h1 align="center">Simple Strings</h1>
 
 These are the simple strings, use them if you dont want to change multiple strings with the same color. Simple Strings basically group up multiple strings into one simple string
-
+* These strings are provided by the plugin and module and are under the "simple_colors" in the new theme layout
 
 | String | Purpose |
 | --------- | :----------------------- |
