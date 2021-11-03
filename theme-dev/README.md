@@ -12,7 +12,16 @@ This is the Documentation for the Themer Plugin
 
 <h1 align="Center">Small introduction</h1>
 
-Start by making a theme in the themer plugin settings, give it a good name
+**DO NOT CHANGE THE JSON FILE DIRECTLY BECAUSE MOST OF THE TIME YOU FUCK SOMETHING UP**
+
+<details>
+ <summary>Making a simple theme</summary>
+ 
+  * Start by making a new theme inside of the themer plugin settings, give it a name and it will set version and author automatically for you.
+ * You will see multiple categories, choose the Simple Colors category and click on the + icon to add a new string. Add a `background` string and give it some color by clicking on it. 
+ * Save and restart and see how it looks!
+ * [Example Simple colors theme](https://cdn.discordapp.com/attachments/824357609778708580/865289689363251210/DiscordThemer_ZelkButBasic.json)
+</details>
 
 <h1 align="Center">Credits</h1>
 
