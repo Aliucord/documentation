@@ -26,6 +26,10 @@ This can either be a [dedicated page](#Dedicated-Settings-Page) or a (bottomshee
 It may be desired to pass arguments to your SettingsTab, e.g. your plugin's SettingsAPI. 
 To do so, simply make use of SettingsTab.withArgs:
 
+<details>
+<summary>Java</summary>
+<br>
+
 ```java
 public class MyPlugin extends Plugin {
     public MyPlugin() {
@@ -33,8 +37,26 @@ public class MyPlugin extends Plugin {
     }
 }
 ```
+</details>
+
+<details>
+<summary>Kotlin</summary>
+<br>
+
+```kt
+class MyPlugin : Plugin() {
+    init {
+        settingsTab = SettingsTab(MySettingsPage::class.java).withArgs(settings)
+    }
+}
+```
+</details>
 
 Then inside your SettingsPage fragment:
+
+<details>
+<summary>Java</summary>
+<br>
 
 ```java
 public class MySettingsPage extends SettingsPage {
@@ -45,6 +67,18 @@ public class MySettingsPage extends SettingsPage {
     }
 }
 ```
+</details>
+
+<details>
+<summary>Kotlin</summary>
+<br>
+
+```kt
+class MySettingsPage(mSettings: SettingsAPI : SettingsPage() {
+    
+}
+```
+</details>
 
 
 ## Dedicated Settings Page
