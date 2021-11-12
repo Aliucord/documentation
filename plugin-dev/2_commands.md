@@ -30,7 +30,7 @@ Simply pass null, Collections.emptyList() or whatever may be suitable.
 
 Quick rundown (Note: You cannot create CommandChoices yourself, use [Utils.createCommandChoice](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord/-utils/create-command-choice.html))
 ```java
-new ApplicationCommandOption(
+Utils.createCommandOption(
         ApplicationCommandType type, // The type of this argument, e.g. String, User or SubCommand
         String name, // The name of this argument. This will both be shown to the user and be the key of this argument in the callback
         String description, // The description of this command
