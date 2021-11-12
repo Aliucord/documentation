@@ -31,22 +31,50 @@ There are two ways to do so:
 
 #### Specifying the className, methodName and arguments
 
+<details>
+<summary>Java</summary>
+<br>
+
 ```java
 patcher.patch("com.discord.magic.Magician", "applyMagic", new Class<?>[] { Context.class, String.class, int.class }, myMethodHook);
 ```
+</details>
+
+<details>
+<summary>Kotlin</summary>
+<br>
+
+```kt
+patcher.patch("com.discord.magic.Magician", "applyMagic", arrayOf(Context::class.java, String::class.java, Int::class.javaPrimitiveType), myMethodHook)
+```
+</details>
 
 #### Retrieving the Method yourself
+
+<details>
+<summary>Java</summary>
+<br>
 
 ```java
 patcher.patch(Magician.class.getDeclaredMethod("applyMagic", Context.class, String.class, int.class), myMethodHook);
 ```
+</details>
+
+<details>
+<summary>Kotlin</summary>
+<br>
+
+```kt
+patcher.patch(Magician::class.java.getDeclaredMethod("applyMagic", Context::class.java, String::class.java, Int::class.javaPrimitiveType), myMethodHook)
+```
+</details>
 
 #### Woah that looks scary D:
 
 Due to Java's method overloads, there can be multiple methods with the same name but different arguments. Thus, it is necessary to specify the argument 
 types of the method. 
 `.class` here (or `::class.java` if you are using Kotlin) simply retrieves the runtime representation of your class which can be used for [Reflection](https://www.oracle.com/technical-resources/articles/java/javareflection.html).
-You basically just need to take the arguments of the desired method and append `.class` to them!
+You basically just need to take the arguments of the desired method and append `.class`/`::class.java` to them!
 
 ##### Reference:
 - [Reflection](https://www.oracle.com/technical-resources/articles/java/javareflection.html)
@@ -84,15 +112,37 @@ the result of the method if any and way more. It behaves a bit differently depen
 
 ### Some Examples
 
-#### Everyone is now called Clyde - InsteadPatch
+#### Everyone is now called Clyde - InsteadPatch (returnConstant)
+
+<details>
+<summary>Java</summary>
+<br>
 
 ```java
 import com.aliucord.patcher.PinePrePatchFn;
+import com.discord.models.user.CoreUser;
 
-patcher.patch("com.discord.models.user.CoreUser", "getUsername", new Class<?>[0], new PineInsteadFn(callFrame -> "Clyde"));
+patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), PineInsteadFn.returnConstant("Clyde"));
 ```
+</details>
+
+<details>
+<summary>Kotlin</summary>
+<br>
+
+```kt
+import com.aliucord.patcher.PinePrePatchFn
+import com.discord.models.user.CoreUser
+
+patcher.patch(CoreUser::class.java.getDeclaredMethod("getUsername"), PineInsteadFn.returnConstant("Clyde"))
+```
+</details>
 
 #### Rename all users named Clyde to Evil Clyde - AfterPatch
+
+<details>
+<summary>Java</summary>
+<br>
 
 ```java
 import com.aliucord.patcher.PinePatchFn;
@@ -103,8 +153,28 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PinePatchFn(c
     if (name != null && name.equalsIgnoreCase("Clyde")) callFrame.setResult("Evil Clyde");
 });
 ```
+</details>
+    
+<details>
+<summary>Kotlin</summary>
+<br>
+
+```kt
+import com.aliucord.patcher.PinePatchFn
+import com.discord.models.user.CoreUser
+
+patcher.patch(CoreUser::class.java.getDeclaredMethod("getUsername"), PinePatchFn {
+    val name = it.getResult() as String?
+    if (name != null && name.equalsIgnoreCase("Clyde")) it.setResult("Evil Clyde");
+})
+```
+</details>
 
 #### Rename specific User - PrePatch
+
+<details>
+<summary>Java</summary>
+<br>
 
 ```java
 import com.aliucord.patcher.PinePrePatchFn;
@@ -116,8 +186,29 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PinePrePatchF
     if (id == 343383572805058560L) callFrame.setResult("Not Clyde!!");
 });
 ```
+</details>
+
+<details>
+<summary>Kotlin</summary>
+<br>
+
+```kt
+import com.aliucord.patcher.PinePrePatchFn
+import com.discord.models.user.CoreUser
+
+patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), PinePrePatchFn {
+    val currentUser = it.thisObject as CoreUser;
+    val id = currentUser.getId();
+    if (id == 343383572805058560L) it.setResult("Not Clyde!!");
+})
+```
+</details>
 
 #### Hide your typing indicator from others - DO_NOTHING
+
+<details>
+<summary>Java</summary>
+<br>
 
 ```java
 import com.discord.stores.StoreUserTyping;
@@ -125,3 +216,16 @@ import top.canyie.pine.callback.MethodReplacement;
 
 patcher.patch(StoreUserTyping.class.getDeclaredMethod("setUserTyping", long.class), MethodReplacement.DO_NOTHING);
 ```
+</details>
+
+<details>
+<summary>Kotlin</summary>
+<br>
+
+```kt
+import com.discord.stores.StoreUserTyping
+import top.canyie.pine.callback.MethodReplacement
+
+patcher.patch(StoreUserTyping::class.java.getDeclaredMethod("setUserTyping", Long::class.javaPrimitiveType), MethodReplacement.DO_NOTHING);
+```
+</details>
