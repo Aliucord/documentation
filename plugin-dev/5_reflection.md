@@ -43,7 +43,7 @@ These sort of methods should be used before trying reflection, as reflection is 
 
 ## Reflection
 
-If the above is not possible, you can use reflection to access non-public properties/fields. Examples for both java and kotlin are shown below.
+If the above is not possible, you can use reflection to access non-public methods/fields. Examples for both java and kotlin are shown below.
 
 <details>
   <summary>Java (method)</summary>
