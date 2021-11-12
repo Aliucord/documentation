@@ -17,10 +17,12 @@ and your plugin will be unloaded.
 Additionally, every plugin class has access to a [CommandsAPI to register commands](2_commands.md), a [PatcherAPI to add patches](3_patching.md) 
 and a [SettingsAPI to persist data](4_settings.md). You may also register a [custom SettingsTab](4_settings.md#SettingsTab)
 
+A minimal plugin boilerplate looks like this:
 
 <details>
-<summary>A minimal plugin boilerplate looks like this:</summary>
-
+<summary>Java</summary>
+<br>
+    
 ```java
 package com.yourname.plugins;
 
@@ -43,7 +45,32 @@ public class MyPlugin extends Plugin {
     }
 }
 ```
+</details>
 
+<details>
+<summary>Kotlin</summary>
+<br>
+
+```kt
+package com.yourname.plugins
+
+import android.content.Context
+
+import com.aliucord.annotations.AliucordPlugin
+import com.aliucord.entities.Plugin
+
+@SuppressWarnings("unused")
+@AliucordPlugin
+class MyPlugin : Plugin() {
+    override fun start(context: Context) {
+
+    }
+
+    override fun stop(context: Context) {
+
+    }
+}
+```
 </details>
 
 ## Plugin Template
