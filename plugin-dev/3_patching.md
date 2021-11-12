@@ -1,6 +1,6 @@
 # Patching
 
-Aliucord uses the ["pine"](https://github.com/canyie/pine) java method hook framework for hooking Discord's methods
+Aliucord currently uses the [Pine](https://github.com/canyie/pine) java method hook framework for hooking Discord's methods, though in plugins you should always use the XposedBridge wrapper to prepare for future internal code changes.
 
 You can use it to run your own code before, instead of or after any method of any Discord class
 
@@ -15,7 +15,7 @@ Every plugin has its own [Patcher](https://aliucord.github.io/dokka/html/-aliuco
 You can add patches using `patcher.patch(method, methodHook)`. This will return a [Runnable](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html)
 that when invoked will remove the patch again. Alternatively, you can simply use `patcher.unpatchAll()` to remove all patches.
 
-The `patch` method essentially takes two arguments. A fully qualified method and a [MethodHook](https://github.com/canyie/pine/blob/master/core/src/main/java/top/canyie/pine/callback/MethodHook.java).
+The `patch` method essentially takes two arguments. A fully qualified method and a [XC_MethodHook](https://api.xposed.info/reference/de/robv/android/xposed/XC_MethodHook.html).
 
 Assuming you want to patch the `applyMagic` method of the Magician class:
 ```java
@@ -84,17 +84,17 @@ You basically just need to take the arguments of the desired method and append `
 
 ## MethodHooks and the CallFrame
 
-The [MethodHook](https://github.com/canyie/pine/blob/master/core/src/main/java/top/canyie/pine/callback/MethodHook.java) class describes how the method should be patched.
-Possible methods are `beforeCall` and `afterCall`. To replace the method you can either use `beforeCall` and set the result or use [MethodReplacement](https://github.com/canyie/pine/blob/master/core/src/main/java/top/canyie/pine/callback/MethodReplacement.java)
+The [XC_MethodHook](https://api.xposed.info/reference/de/robv/android/xposed/XC_MethodHook.html) class describes how the method should be patched.
+Possible methods are `beforeCall` and `afterCall`. To replace the method you can either use `beforeCall` and set the result or use [XC_MethodReplacement](https://api.xposed.info/reference/de/robv/android/xposed/XC_MethodReplacement.html)
 
 For convenience, Aliucord provides the 
-[PinePatchFn](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pine-patch-fn), 
-[PinePrePatchFn](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pine-pre-patch-fn) and
-[PineInsteadFn](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pine-instead-fn) 
+[Hook](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-hook), 
+[PreHook](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pre-hook) and
+[InsteadHook](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-instead-hook) 
 classes that take a single lambda method as their only argument.
 
 
-No matter which patch method you decide for, you will always work with the [CallFrame](https://github.com/canyie/pine/blob/19dd53fc9deaf1f571e9a05562d0557e19cd87fc/core/src/main/java/top/canyie/pine/Pine.java#L659-L718)
+No matter which patch method you decide for, you will always work with the [CallFrame](https://api.xposed.info/reference/de/robv/android/xposed/XC_MethodHook.MethodHookParam.html)
 which is essentially a Context object of the method you're patching. It contains the thisObject (the class the method belongs to), the arguments passed to the method, 
 the result of the method if any and way more. It behaves a bit differently depending on whether this is a prePatch or regular patch:
 
@@ -112,17 +112,17 @@ the result of the method if any and way more. It behaves a bit differently depen
 
 ### Some Examples
 
-#### Everyone is now called Clyde - InsteadPatch (returnConstant)
+#### Everyone is now called Clyde - InsteadHook (returnConstant)
 
 <details>
 <summary>Java</summary>
 <br>
 
 ```java
-import com.aliucord.patcher.PinePrePatchFn;
+import com.aliucord.patcher.InsteadHook;
 import com.discord.models.user.CoreUser;
 
-patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), PineInsteadFn.returnConstant("Clyde"));
+patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), InsteadHook.returnConstant("Clyde"));
 ```
 </details>
 
@@ -131,24 +131,24 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), PineInsteadFn.ret
 <br>
 
 ```kt
-import com.aliucord.patcher.PinePrePatchFn
+import com.aliucord.patcher.InsteadHook
 import com.discord.models.user.CoreUser
 
-patcher.patch(CoreUser::class.java.getDeclaredMethod("getUsername"), PineInsteadFn.returnConstant("Clyde"))
+patcher.patch(CoreUser::class.java.getDeclaredMethod("getUsername"), InsteadHook.returnConstant("Clyde"))
 ```
 </details>
 
-#### Rename all users named Clyde to Evil Clyde - AfterPatch
+#### Rename all users named Clyde to Evil Clyde - Hook
 
 <details>
 <summary>Java</summary>
 <br>
 
 ```java
-import com.aliucord.patcher.PinePatchFn;
+import com.aliucord.patcher.Hook;
 import com.discord.models.user.CoreUser;
 
-patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PinePatchFn(callFrame -> {
+patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new Hook(callFrame -> {
     var name = (String) callFrame.getResult();
     if (name != null && name.equalsIgnoreCase("Clyde")) callFrame.setResult("Evil Clyde");
 });
@@ -160,27 +160,27 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PinePatchFn(c
 <br>
 
 ```kt
-import com.aliucord.patcher.PinePatchFn
+import com.aliucord.patcher.Hook
 import com.discord.models.user.CoreUser
 
-patcher.patch(CoreUser::class.java.getDeclaredMethod("getUsername"), PinePatchFn {
+patcher.patch(CoreUser::class.java.getDeclaredMethod("getUsername"), Hook {
     val name = it.getResult() as String?
     if (name != null && name.equalsIgnoreCase("Clyde")) it.setResult("Evil Clyde");
 })
 ```
 </details>
 
-#### Rename specific User - PrePatch
+#### Rename specific User - PreHook
 
 <details>
 <summary>Java</summary>
 <br>
 
 ```java
-import com.aliucord.patcher.PinePrePatchFn;
+import com.aliucord.patcher.PreHook;
 import com.discord.models.user.CoreUser;
 
-patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PinePrePatchFn(callFrame -> {
+patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PreHook(callFrame -> {
     var currentUser = (CoreUser) callFrame.thisObject;
     long id = currentUser.getId();
     if (id == 343383572805058560L) callFrame.setResult("Not Clyde!!");
@@ -193,10 +193,10 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PinePrePatchF
 <br>
 
 ```kt
-import com.aliucord.patcher.PinePrePatchFn
+import com.aliucord.patcher.PreHook
 import com.discord.models.user.CoreUser
 
-patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), PinePrePatchFn {
+patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), PreHook {
     val currentUser = it.thisObject as CoreUser;
     val id = currentUser.getId();
     if (id == 343383572805058560L) it.setResult("Not Clyde!!");
@@ -204,7 +204,7 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), PinePrePatchFn {
 ```
 </details>
 
-#### Hide your typing indicator from others - DO_NOTHING
+#### Hide your typing indicator from others - InsteadHook.DO_NOTHING
 
 <details>
 <summary>Java</summary>
@@ -212,9 +212,9 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), PinePrePatchFn {
 
 ```java
 import com.discord.stores.StoreUserTyping;
-import top.canyie.pine.callback.MethodReplacement;
+import top.canyie.pine.callback.InsteadHook;
 
-patcher.patch(StoreUserTyping.class.getDeclaredMethod("setUserTyping", long.class), MethodReplacement.DO_NOTHING);
+patcher.patch(StoreUserTyping.class.getDeclaredMethod("setUserTyping", long.class), v.DO_NOTHING);
 ```
 </details>
 
@@ -224,8 +224,8 @@ patcher.patch(StoreUserTyping.class.getDeclaredMethod("setUserTyping", long.clas
 
 ```kt
 import com.discord.stores.StoreUserTyping
-import top.canyie.pine.callback.MethodReplacement
+import top.canyie.pine.callback.InsteadHook
 
-patcher.patch(StoreUserTyping::class.java.getDeclaredMethod("setUserTyping", Long::class.javaPrimitiveType), MethodReplacement.DO_NOTHING);
+patcher.patch(StoreUserTyping::class.java.getDeclaredMethod("setUserTyping", Long::class.javaPrimitiveType), InsteadHook.DO_NOTHING);
 ```
 </details>
