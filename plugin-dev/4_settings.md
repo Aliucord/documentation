@@ -19,7 +19,7 @@ You may want to add a SettingsTab to your plugin, which can be opened by clickin
 Aliucord's plugins tab
 
 To do so, you must simply set `this.settingsTab` to a [SettingsTab](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.entities/-plugin/-settings-tab). 
-This can either be a [dedicated page](#Dedicated-Settings-Page) or a (bottomsheet)(#Settings-Bottomsheet)
+This can either be a [dedicated page](#Dedicated-Settings-Page) or a [bottomsheet](#Settings-Bottomsheet)
 
 ## Passing arguments to your SettingsTab
 
