@@ -1,7 +1,7 @@
 # Themer Documentation for the Themer Plugin
 > PLEASE READ: You need a brain, a pair of eyes, and the ability to read English.
 
-This is the Documentation for the [Themer Plugin](https://github.com/Vendicated/AliucordPlugins/raw/builds/Themer.zip) by [Ven](https://github.com/Vendicated]
+This is the Documentation for the [Themer Plugin](https://github.com/Vendicated/AliucordPlugins/raw/builds/Themer.zip) by [Ven](https://github.com/Vendicated)
 
 * [Manifest](https://github.com/Reinified/documentation/blob/main/theme-dev/Manifest.md)
 * [Background Strings](https://github.com/Reinified/documentation/blob/main/theme-dev/Backgrounds.md)
