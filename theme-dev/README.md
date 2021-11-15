@@ -8,7 +8,7 @@ This is the Documentation for the Themer Plugin
 * [Primary Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/PrimaryColors.md)
 * [uikit Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/uikitStrings.md)
 * [Drawable Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/DrawableStrings.md)
-* [Random Things which can change over time and also some resources which might help](https://github.com/GangsterFox/documentation/blob/main/theme-dev/DrawableStrings.md)
+* [Random Things which can change over time and also some resources which might help](https://github.com/Aliucord/documentation/blob/main/theme-dev/RandomThings.md)
 
 <h1 align="Center">Small introduction</h1>
 
