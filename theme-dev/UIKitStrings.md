@@ -1,6 +1,6 @@
-<h1 align="center">uikit Strings</h1>
+<h1 align="center">UIKit Strings</h1>
 
-* uikit strings. They are in the Color Values screen if you dont know
+* UIKit strings. They are in the Color Values screen if you dont know
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
