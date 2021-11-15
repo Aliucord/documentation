@@ -74,7 +74,7 @@ public class MySettingsPage extends SettingsPage {
 <br>
 
 ```kt
-class MySettingsPage(mSettings: SettingsAPI : SettingsPage() {
+class MySettingsPage(val mSettings: SettingsAPI) : SettingsPage() {
     
 }
 ```
