@@ -1,6 +1,6 @@
-<h1 align="center">Primary dark Colors</h1>
+<h1 align="center">Primary Strings</h1>
 
-* Primary dark colors, used for the big things chat bg, server list, member list, etc for dark mode
+* Only for Discord Dark Mode, not for Light mode or AMOLED mode.
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
