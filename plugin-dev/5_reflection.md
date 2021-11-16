@@ -52,6 +52,8 @@ If the above is not possible, you can use reflection to access non-public method
   ```java
   // Get the method
   var method = ClassName.class.getDeclaredMethod("methodName");
+  // Make it "accessible"
+  method.setAccessible(true);
   // Invoke it
   // Note: if the method takes any arguments then add them after the classInstance argument.
   // Additionally, if the method is static then just pass null for the classInstance.
@@ -66,6 +68,8 @@ If the above is not possible, you can use reflection to access non-public method
   ```java
   // Get the field
   var field = ClassName.class.getDeclaredField("fieldName");
+  // Make it "accessible"
+  field.setAccessible(true);
   // Get value
   // Note: if the field is static then just pass null for the classInstance.
   var value = field.get(classInstance);
@@ -78,11 +82,13 @@ If the above is not possible, you can use reflection to access non-public method
 
   ```kt
   // Get the method
-  val method = ClassName::class.java.getDeclaredMethod("methodName");
+  val method = ClassName::class.java.getDeclaredMethod("methodName").apply { 
+    isAccessible = true // Make it "accessible"
+  }
   // Invoke it
   // Note: if the method takes any arguments then add them after the classInstance argument.
   // Additionally, if the method is static then just pass null for the classInstance.
-  val result = method.invoke(classInstance);
+  val result = method.invoke(classInstance)
   ```
 </details>
 
@@ -92,9 +98,11 @@ If the above is not possible, you can use reflection to access non-public method
 
   ```kt
   // Get the field
-  val field = ClassName::class.java.getDeclaredField("fieldName");
+  val field = ClassName::class.java.getDeclaredField("fieldName").apply { 
+    isAccessible = true // Make it "accessible"
+  }
   // Get value
   // Note: if the field is static then just pass null for the classInstance.
-  val value = field.get(classInstance);
+  val value = field.get(classInstance)
   ```
 </details>
