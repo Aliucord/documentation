@@ -29,15 +29,17 @@ These are kind of a mess and take a lot of arguments because they come from Disc
 Simply pass null, Collections.emptyList() or whatever may be suitable.
 
 Quick rundown (Note: You cannot create CommandChoices yourself, use [Utils.createCommandChoice](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord/-utils/create-command-choice.html))
-```java
+```kt
 Utils.createCommandOption(
-        ApplicationCommandType type, // The type of this argument, e.g. String, User or SubCommand
-        String name, // The name of this argument. This will both be shown to the user and be the key of this argument in the callback
-        String description, // The description of this command
-        Integer descriptionRes, // Resource ID of the description string. If discord has a string you find suitable, use this to have the description be localized, otherwise pass null
-        boolean required, // Whether this option is required (the user MUST fill it out)
-        boolean def, // Whether this option is the default selected option ( I think ?? )
-        List<CommandChoice> choices, // List of choices the user can choose from
-        List<ApplicationCommandOption> options // Nested command options, only applicable for SubCommands
-)
+        type: ApplicationCommandType = ApplicationCommandType.STRING, // The type of this option, e.g. String, User or SubCommand
+        name: String, // The name of this option
+        description: String? = null, // This will both be shown to the user and be the key of this argument in the callback
+        descriptionRes: Int? = null, // Resource ID of the description string. If discord has a string you find suitable, use this to have the description be localized, otherwise pass null
+        required: Boolean = false, // Whether this option is required or not
+        default: Boolean = false, // Whether this option is the default selected option
+        channelTypes: List<Int?> = emptyList(), // Most likely the allowed channels this can be used in, but not certian, recommended to keep this an empty list.
+        choices: List<CommandChoice> = emptyList(), // The pre-chosen options that this can be, if it is a STRING option
+        subCommandOptions: List<ApplicationCommandOption> = emptyList(), // The child subcommand options if applicable
+        autocomplete: Boolean = false // Currently unknown to exactly what this does, it is recommended to either pass false or ommit this parameter all together.
+): ApplicationCommandOption
 ```
