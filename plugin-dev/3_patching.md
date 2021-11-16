@@ -76,7 +76,7 @@ patcher.patch(Magician::class.java.getDeclaredMethod("applyMagic", Context::clas
 Due to Java's method overloads, there can be multiple methods with the same name but different parameters. Thus, it is necessary to specify the parameter 
 types of the method. 
 `.class` here (or `::class.java` if you are using Kotlin) simply retrieves the runtime representation of your class which can be used for [Reflection](https://www.oracle.com/technical-resources/articles/java/javareflection.html).
-You basically just need to take the arguments of the desired method and append `.class`/`::class.java` to them!
+You basically just need to take the parameters of the desired method and append `.class`/`::class.java` to them!
 
 ##### Reference:
 - [Reflection](https://www.oracle.com/technical-resources/articles/java/javareflection.html)
