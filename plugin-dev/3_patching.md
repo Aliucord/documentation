@@ -215,7 +215,7 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), PreHook {
 import com.discord.stores.StoreUserTyping;
 import top.canyie.pine.callback.InsteadHook;
 
-patcher.patch(StoreUserTyping.class.getDeclaredMethod("setUserTyping", long.class), v.DO_NOTHING);
+patcher.patch(StoreUserTyping.class.getDeclaredMethod("setUserTyping", long.class), InsteadHook.DO_NOTHING);
 ```
 </details>
 
