@@ -8,6 +8,8 @@ You can use it to run your own code before, instead of or after any method of an
 Refer to [Finding Discord Stuff](6_finding_discord_stuff.md)
 
 ## Retrieving private fields / calling private methods inside patches
+Refer to [Reflection](5_reflection.md)
+
 ## The Basics
 
 Every plugin has its own [Patcher](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.api/-patcher-a-p-i) instance as `patcher` inside your Plugin class
