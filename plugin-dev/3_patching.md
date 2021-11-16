@@ -93,8 +93,7 @@ For convenience, Aliucord provides the
 [Hook](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-hook), 
 [PreHook](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pre-hook) and
 [InsteadHook](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-instead-hook) 
-classes that take a single lambda method as their only argument.
-
+classes that take a single lambda method as their only argument. ***These should always be used whenever possible, as it allows aliucord to catch and log errors appropriately.***
 
 No matter which patch method you decide for, you will always work with the [CallFrame](https://api.xposed.info/reference/de/robv/android/xposed/XC_MethodHook.MethodHookParam.html)
 which is essentially a Context object of the method you're patching. It contains the thisObject (the class the method belongs to), the arguments passed to the method, 
