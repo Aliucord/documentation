@@ -1,6 +1,6 @@
 # Themer Documentation
 
-This is the Documentation for the Themer Plugin
+Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicated/AliucordPlugins/tree/main/Themer)
 
 * [Main Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/MainStrings.md)
 * [Simple Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/SimpleStrings.md)
