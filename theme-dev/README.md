@@ -9,7 +9,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 * [uikit Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/uikitStrings.md)
 * [Drawable Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/DrawableStrings.md)
 * [Material You](/theme-dev/MaterialYou.md)
-* [Random Things which can change over time and also some resources which might help](https://github.com/Aliucord/documentation/blob/main/theme-dev/RandomThings.md)
+* [Random Things which may change over time, and also some resources which might help](https://github.com/Aliucord/documentation/blob/main/theme-dev/RandomThings.md)
 
 <h1 align="Center">Minor Introduction</h1>
 
