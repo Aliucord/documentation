@@ -53,4 +53,3 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 * Thanks to Ven for helping me in a few things here and there
 * FOX HOW DO YOU DO THIS???? *-Ven*
 
-FAQ: soon:tm:
