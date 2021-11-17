@@ -1,15 +1,16 @@
 # Themer Documentation
 
 Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicated/AliucordPlugins/tree/main/Themer)
+> Some things may apply to the XPosed Module
 
-* [Main Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/MainStrings.md)
-* [Simple Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/SimpleStrings.md)
-* [Accent Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/AccentColors.md)
-* [Primary Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/PrimaryColors.md)
-* [uikit Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/uikitStrings.md)
-* [Drawable Strings](https://github.com/GangsterFox/documentation/blob/main/theme-dev/DrawableStrings.md)
-* [Material You](/theme-dev/MaterialYou.md)
-* [Random Things which may change over time, and also some resources which might help](https://github.com/Aliucord/documentation/blob/main/theme-dev/RandomThings.md)
+* [Main Strings](MainStrings.md)
+* [Simple Strings](SimpleStrings.md)
+* [Accent Strings](AccentColors.md)
+* [Primary Strings](PrimaryColors.md)
+* [uikit Strings](uikitStrings.md)
+* [Drawable Strings](DrawableStrings.md)
+* [Material You](MaterialYou.md)
+* [Random Things which may change over time, and also some resources which might help](RandomThings.md)
 
 <h1 align="Center">Small Introduction</h1>
 
@@ -23,11 +24,3 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
  * Save, then select restart to see how it looks!
  * [Example Simple Colors Theme](https://cdn.discordapp.com/attachments/824357609778708580/865289689363251210/DiscordThemer_ZelkButBasic.json)
 </details>
-
-<h1 align="Center">Credits</h1>
-
-* Thanks to Fred for fixing spelling errors
-* Thanks to Soulz for his research on font strings
-* Thanks to Riyu for researching what's themable in Light Mode
-* Thanks to Ven for helping me in a few things here and there
-* FOX HOW DO YOU DO THIS???? *-Ven*
