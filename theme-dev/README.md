@@ -11,7 +11,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 * [Material You](/theme-dev/MaterialYou.md)
 * [Random Things which may change over time, and also some resources which might help](https://github.com/Aliucord/documentation/blob/main/theme-dev/RandomThings.md)
 
-<h1 align="Center">Minor Introduction</h1>
+<h1 align="Center">Small Introduction</h1>
 
 <p align="center">DIRECTLY MODIFY THE JSON FILE AT YOUR OWN RISK, YOU WILL LIKELY FUCK SOMETHING UP</p>
 
