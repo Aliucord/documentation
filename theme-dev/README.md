@@ -13,7 +13,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 
 <h1 align="Center">Minor Introduction</h1>
 
-<h4 align="center">DIRECTLY MODIFY THE JSON FILE AT YOUR OWN RISK, YOU WILL LIKELY FUCK SOMETHING UP</h4>
+<p align="center">DIRECTLY MODIFY THE JSON FILE AT YOUR OWN RISK, YOU WILL LIKELY FUCK SOMETHING UP</p>
 
 <details>
  <summary>Creating a simple theme</summary>
