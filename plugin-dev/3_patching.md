@@ -8,6 +8,8 @@ You can use it to run your own code before, instead of or after any method of an
 Refer to [Finding Discord Stuff](6_finding_discord_stuff.md)
 
 ## Retrieving private fields / calling private methods inside patches
+Refer to [Reflection](5_reflection.md)
+
 ## The Basics
 
 Every plugin has its own [Patcher](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.api/-patcher-a-p-i) instance as `patcher` inside your Plugin class
@@ -71,10 +73,10 @@ patcher.patch(Magician::class.java.getDeclaredMethod("applyMagic", Context::clas
 
 #### Woah that looks scary D:
 
-Due to Java's method overloads, there can be multiple methods with the same name but different arguments. Thus, it is necessary to specify the argument 
+Due to Java's method overloads, there can be multiple methods with the same name but different parameters. Thus, it is necessary to specify the parameter 
 types of the method. 
 `.class` here (or `::class.java` if you are using Kotlin) simply retrieves the runtime representation of your class which can be used for [Reflection](https://www.oracle.com/technical-resources/articles/java/javareflection.html).
-You basically just need to take the arguments of the desired method and append `.class`/`::class.java` to them!
+You basically just need to take the parameters of the desired method and append `.class`/`::class.java` to them!
 
 ##### Reference:
 - [Reflection](https://www.oracle.com/technical-resources/articles/java/javareflection.html)
@@ -82,7 +84,7 @@ You basically just need to take the arguments of the desired method and append `
 - [Class.getDeclaredMethod](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class...))
 
 
-## MethodHooks and the CallFrame
+## MethodHooks and MethodHookParams
 
 The [XC_MethodHook](https://api.xposed.info/reference/de/robv/android/xposed/XC_MethodHook.html) class describes how the method should be patched.
 Possible methods are `beforeCall` and `afterCall`. To replace the method you can either use `beforeCall` and set the result or use [XC_MethodReplacement](https://api.xposed.info/reference/de/robv/android/xposed/XC_MethodReplacement.html)
@@ -91,10 +93,9 @@ For convenience, Aliucord provides the
 [Hook](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-hook), 
 [PreHook](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-pre-hook) and
 [InsteadHook](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord.patcher/-instead-hook) 
-classes that take a single lambda method as their only argument.
+classes that take a single lambda method as their only argument. ***These should always be used whenever possible, as it allows aliucord to catch and log errors appropriately.***
 
-
-No matter which patch method you decide for, you will always work with the [CallFrame](https://api.xposed.info/reference/de/robv/android/xposed/XC_MethodHook.MethodHookParam.html)
+No matter which patch method you decide for, you will always work with a [MethodHookParam](https://api.xposed.info/reference/de/robv/android/xposed/XC_MethodHook.MethodHookParam.html)
 which is essentially a Context object of the method you're patching. It contains the thisObject (the class the method belongs to), the arguments passed to the method, 
 the result of the method if any and way more. It behaves a bit differently depending on whether this is a prePatch or regular patch:
 
@@ -148,9 +149,9 @@ patcher.patch(CoreUser::class.java.getDeclaredMethod("getUsername"), InsteadHook
 import com.aliucord.patcher.Hook;
 import com.discord.models.user.CoreUser;
 
-patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new Hook(callFrame -> {
-    var name = (String) callFrame.getResult();
-    if (name != null && name.equalsIgnoreCase("Clyde")) callFrame.setResult("Evil Clyde");
+patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new Hook(methodHookParam -> {
+    var name = (String) methodHookParam.getResult();
+    if (name != null && name.equalsIgnoreCase("Clyde")) methodHookParam.setResult("Evil Clyde");
 });
 ```
 </details>
@@ -180,10 +181,10 @@ patcher.patch(CoreUser::class.java.getDeclaredMethod("getUsername"), Hook {
 import com.aliucord.patcher.PreHook;
 import com.discord.models.user.CoreUser;
 
-patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PreHook(callFrame -> {
-    var currentUser = (CoreUser) callFrame.thisObject;
+patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PreHook(methodHookParam -> {
+    var currentUser = (CoreUser) methodHookParam.thisObject;
     long id = currentUser.getId();
-    if (id == 343383572805058560L) callFrame.setResult("Not Clyde!!");
+    if (id == 343383572805058560L) methodHookParam.setResult("Not Clyde!!");
 });
 ```
 </details>
@@ -214,7 +215,7 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), PreHook {
 import com.discord.stores.StoreUserTyping;
 import top.canyie.pine.callback.InsteadHook;
 
-patcher.patch(StoreUserTyping.class.getDeclaredMethod("setUserTyping", long.class), v.DO_NOTHING);
+patcher.patch(StoreUserTyping.class.getDeclaredMethod("setUserTyping", long.class), InsteadHook.DO_NOTHING);
 ```
 </details>
 
