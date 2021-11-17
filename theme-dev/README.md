@@ -26,8 +26,8 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 
 <h1 align="Center">Credits</h1>
 
-* Thanks to Fred for fixing spelling errors.
-* Thanks to Soulz for his research on font strings.
-* Thanks to Riyu for researching what's themable in Light Mode.
-* Thanks to Ven for helping me in a few things here and there.
+* Thanks to Fred for fixing spelling errors
+* Thanks to Soulz for his research on font strings
+* Thanks to Riyu for researching what's themable in Light Mode
+* Thanks to Ven for helping me in a few things here and there
 * FOX HOW DO YOU DO THIS???? *-Ven*
