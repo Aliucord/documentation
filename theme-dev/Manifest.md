@@ -1,6 +1,6 @@
 <h1 align="center">Manifest</h1>
 
-**DO NOT CHANGE THE JSON FILE UNLESS NECESSARY, OR ELSE YOU WILL FUCK UP YOUR THEME BECAUSE YOU DON'T KNOW WHAT YOU'RE DOING.**
+**DO NOT CHANGE THE JSON FILE UNLESS NECESSARY, OR ELSE YOU WILL MESS UP YOUR THEME BECAUSE YOU DON'T KNOW WHAT YOU'RE DOING.**
 
 > Strings used for the plugin to tell the user what the name of the theme is, author, version, License, etc but also things like custom font and custom background
 
