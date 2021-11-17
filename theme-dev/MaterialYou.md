@@ -7,6 +7,3 @@ To get started you need a device with an Android 12 ROM that includes support fo
 ### Adding Material You Colors
 Material You colors are separated into 5 seperate groups, accent_1, accent_2, accent_3, neutral_1, neutral_2. This is when the app comes into play, launch the app I had you download beforehand, you'll see all 5 groups and different numbers inside of those groups. In the JSON file remove the colors you set before and replace them with the respecting Material You string. The string should look similar to this `accent_2_700` (the last number should be one of the numbers inside of one of the 5 groups) this will pull that color from the Material You API and replace the color on Discord. More detailed explanation can be found [here](https://discord.com/channels/811255666990907402/868419532992172073/898303519394758706).
 
-### Credits
-- Karebu#7064 - The creator of this document
-- Ven - For helping me understand this from the beginning with this [message](https://discord.com/channels/811255666990907402/868419532992172073/898303519394758706)
