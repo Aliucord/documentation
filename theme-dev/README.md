@@ -1,4 +1,4 @@
-# Themer Documentation for the Themer Plugin
+# Themer Documentation
 
 This is the Documentation for the Themer Plugin
 
