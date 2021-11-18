@@ -22,6 +22,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 9. [Random Things](#random-things)
     1. [Advanced Resources](#advanced-resources)
     2. [Light Mode Theming](#light-mode-theming)
+10. [Troubleshooting](#troubleshooting)
 <br />
 <br />
 
