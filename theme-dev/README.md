@@ -126,8 +126,8 @@ These are the links allowed to be used with Themer, any other link besides ones 
 | input_background | changes the background of places where you can enter text, for example: Notes in a user profile, Role name enter |
 
 
-* Normal strings take priority over Simple Strings so if a string in the simple string group is changed by adding it in color, that string will get prioritized
-* If you want to know what strings get changed using the simple strings check [this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135) out
+* Normal Strings take priority over Simple Strings so if a String grouped in with a Simple String is changed, that individual changed string will be prioritized.
+* If you'd like to know what groups of strings are changed when using Simple Strings view [this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135).
 
 <br />
 <br />
@@ -170,7 +170,7 @@ These are the links allowed to be used with Themer, any other link besides ones 
 
 ## General Strings
 
-Primary strings are used for both dark and light mode, used for smaller things
+> General Strings are used for both dark and light mode, mostly used for smaller things
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
