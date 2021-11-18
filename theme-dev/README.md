@@ -6,6 +6,10 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 1. [Small Introduction](#small-introduction)
     1. [Creating a Simple Theme](#creating-a-simple-theme)
 2. [Main Strings](#main-strings)
+    1. [Manifest Strings](#manifest-strings)
+    2. [Background Strings](#background-strings)
+    3. [Font Strings](#font-strings)
+    4. [Allowed URLs](#urls-allowed-to-be-used-with-themer)
 3. [Simple Strings](#simple-strings)
 4. [Accent Strings](#accent-strings)
 5. [Primary Strings](#primary-strings)
@@ -42,7 +46,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 > Strings used for the plugin to tell the user what the name of the theme is, author, version, License, etc but also things like custom font and custom background
 
 
-* The manifest strings
+### Manifest Strings
 
 Used to show name of the theme, author, etc. They are in the "manifest" section in the .json
 ```json
@@ -57,9 +61,11 @@ Used to show name of the theme, author, etc. They are in the "manifest" section 
 When done correctly it should look like this in the json
 ![image](https://user-images.githubusercontent.com/84905506/132266565-ff27a087-4e36-48ca-baca-2a1d823939fd.png)
 
-* Background strings
+### Background Strings
 
 These are the strings for adding a background and also giving it transparency(alpha). They are in the "background" section in the .json
+
+**Warning: Your Background won't be visible unless you enable transparency!**
 ```json
 {
   "url": "url for the bg image, recommended and trusted to use cdn.discordapp.com links",
@@ -69,12 +75,12 @@ These are the strings for adding a background and also giving it transparency(al
 ```
 When done correctly it should look like this in the json
 ![image](https://user-images.githubusercontent.com/84905506/132266685-eaa4cca8-9d49-449a-bf8b-c17acc9d3270.png)
-* Font string
+### Font Strings
 
 The string for the font URL. The string is located in the "fonts" section in the .json
 ```json
 {
-  "*": "url of the font, recommended and trusted to use cdn.discordapp.com links",
+  "*": "This changes the font globally",
   "ginto_bold": "changes categories, channel names, and headers in user settings",
   "ginto_medium": "changes user settings category names, and the channel name in the member list",
   "ginto_regular": "changes nothing for me, you can test it if you want",
@@ -89,8 +95,8 @@ When done correctly it should look like this in the json
 ![image](https://user-images.githubusercontent.com/84905506/132266358-3d8e34da-622d-49d9-b74a-d7dd1d413ee6.png)
 
 
-<h2 align="center">All Links which are allowed for Wallpaper/Font</h2>
-<h4 align="center">These are the links allowed to be used with Themer, all other links will not work and will not load.</h4>
+### URLs allowed to be used with Themer
+These are the links allowed to be used with Themer, any other link besides ones listed below will not load.
 
 
 * github.com
