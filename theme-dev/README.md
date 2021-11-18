@@ -14,7 +14,9 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 8. [Material You](#material-you)
     1. [Getting Started](#getting-started)
     2. [Adding Material You Colors](#adding-material-you-colors)
-0. [Random Things which may change over time, and also some resources which might help](RandomThings.md)
+9. [Random Things which may change over time, and also some resources which might help](#random-things)
+    1. [Advanced Resources](#advanced-resources)
+    2. [Light Mode Theming](#light-mode-theming)
 <br />
 <br />
 
@@ -257,5 +259,24 @@ More detailed explanation can be found [here](https://discord.com/channels/81125
 
 <br />
 <br />
+
+
+# Random Things
+### Advanced Resources
+
+* This link by ven might help you if you know what you are doing
+
+https://gist.github.com/Vendicated/7e8aa7b2512b8e38e041692cbf34acfa
+
+### Light Mode Theming
+
+* As Riyu has found out, a lot of things in Light mode are not themable, but ven did say he will add more light mode support. [Link to Riyu's light mode tests](https://ptb.discord.com/channels/811255666990907402/868419532992172073/902278346195476490)
+
+
+
+
+<br />
+<br />
+
 
 ### **You've reached the end**
