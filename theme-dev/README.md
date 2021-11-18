@@ -113,7 +113,9 @@ These are the links allowed to be used with Themer, any other link besides ones 
 
 # Simple Strings
 
-> These are the Simple Strings, don't use them if you don't want to change multiple strings with the same color.
+> These are Simple Strings, they change multiple strings at once, don't use these if you don't want to change multiple strings with the same color. Normal strings will take priority over Simple Strings.
+
+
 
 
 | String | Purpose |
@@ -125,9 +127,7 @@ These are the links allowed to be used with Themer, any other link besides ones 
 | statusbar | Status Bar (Where Notifications, Bluetooth, Battery, etc... icons are located) |
 | input_background | Background of Input Boxes (Discord Login, Search Box, etc...) |
 
-
-* Normal Strings take priority over Simple Strings so if a String grouped in with a Simple String is changed, that individual changed string will be prioritized.
-* If you'd like to know what groups of strings are changed when using Simple Strings view [this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135).
+**If you'd like to know what groups of strings are changed by the strings shown above view [this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135).**
 
 <br />
 <br />
