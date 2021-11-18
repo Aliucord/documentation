@@ -15,6 +15,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 0. [Random Things which may change over time, and also some resources which might help](RandomThings.md)
 <br />
 <br />
+
 # Small Introduction
 
  **DIRECTLY MODIFY THE JSON FILE AT YOUR OWN RISK, YOU WILL LIKELY FUCK SOMETHING UP**
