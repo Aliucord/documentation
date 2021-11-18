@@ -291,5 +291,13 @@ https://gist.github.com/Vendicated/7e8aa7b2512b8e38e041692cbf34acfa
 <br />
 <br />
 
+### Credits
+- Fred - Fixing spelling errors
+- Soulz - Font Strings Research
+- Riyu - Light Mode Research
+- Ven - Helping with a few things here and there
+- Karebu - README Rehaul and other things
+
+
 
 ### **You've reached the end**
