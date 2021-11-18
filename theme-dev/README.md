@@ -208,10 +208,10 @@ These are the links allowed to be used with Themer, any other link besides ones 
 | design_bottom_navigation_item_background | is used mostly for the bottom part of the plugin page(where description is, uninstall and settings) also themes search box in plugins page |
 | ic_channel_text | by the name it changes the channel text in the channel list, since it doesn't get themed it will only theme the # in the channel list and top bar when looking in chat |
 | drawable_button_red | the red NEW↑ in the guild list when you get a ping in a guild |
-| drawable_button_red_neutral | I actually have no idea what it does, if you find anything please tell me, thanks. |
+| drawable_button_red_neutral | I actually have no idea what it does, if you know what it does you can let us know in the Aliucord Discord. |
 | drawable_voice_indicator_speaking | the color for the ring when someone talks in a vc |
 | drawable_voice_user_background_speaking | speaking background, I don't know how to better explain it |
-| drawable_voice_sensitivity_progress | the progress bar for when you test out your mic sens |
+| drawable_voice_sensitivity_progress | the loudness bar for when you test out your mic sensitivity |
 | ic_ban_red_24dp | the ban icon color, kind of pointless tbh and no I don't know what the kick icon color string like at all |
 | ic_sidebar_notications_off_dark_24dp | color of the notification icon in the sidebar when you have the channel muted |
 | ic_sidebar_notications_on_dark_24dp | color of the notification icon in the sidebar when you have the channel isn't muted |
