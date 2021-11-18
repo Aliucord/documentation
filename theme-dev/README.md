@@ -1,7 +1,7 @@
 # Themer Documentation
 
 Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicated/AliucordPlugins/tree/main/Themer)
-> Some things may apply to the XPosed Module too
+> Some things may apply to the [XPosed Module](https://github.com/Aliucord/DiscordThemer) too
 
 1. [Small Introduction](#small-introduction)
     1. [Creating a Simple Theme](#creating-a-simple-theme)
