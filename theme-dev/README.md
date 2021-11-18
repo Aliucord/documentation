@@ -37,7 +37,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
  * Save, then select restart to see how it looks!
 
 [Download Example Theme](https://cdn.discordapp.com/attachments/824357609778708580/865289689363251210/DiscordThemer_ZelkButBasic.json)
-</details>
+
 <br />
 <br />
 
@@ -298,6 +298,7 @@ https://gist.github.com/Vendicated/7e8aa7b2512b8e38e041692cbf34acfa
 - Ven - Helping with a few things here and there
 - Karebu - README Rehaul and other things
 
-
+<br />
+<br />
 
 ### **You've reached the end**
