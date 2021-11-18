@@ -12,8 +12,8 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 6. [uikit Strings](#uikit-strings)
 7. [Drawable Strings](#drawable-strings)
 8. [Material You](#material-you)
-    1. [Getting Started]()
-    2. [Adding Material You Colors]()
+    1. [Getting Started](#getting-started)
+    2. [Adding Material You Colors](#adding-material-you-colors)
 0. [Random Things which may change over time, and also some resources which might help](RandomThings.md)
 <br />
 <br />
