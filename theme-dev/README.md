@@ -121,7 +121,7 @@ These are the links allowed to be used with Themer, any other link besides ones 
 | background_secondary | changes secondary backgrounds |
 | mention_highlight | changes the mention highlight on a message you got pinged in |
 | active_channel | changes nothing as far as I see |
-| statusbar | changes the statusbar where your battary precentege is, time clock, etc |
+| statusbar | changes the color of the the status bar where your battery icon is located, time clock, etc |
 | input_background | changes the background of places where you can enter text, for example: Notes in a user profile, Role name enter |
 
 
