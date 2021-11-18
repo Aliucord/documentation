@@ -113,7 +113,7 @@ These are the links allowed to be used with Themer, any other link besides ones 
 
 # Simple Strings
 
-> These are Simple Strings, they change multiple strings at once, don't use these if you don't want to change multiple strings with the same color. Normal strings will take priority over Simple Strings.
+> These are Simple Strings, they change multiple strings at once don't use these if you don't want to change multiple strings at once. Normal strings will take priority over Simple Strings.
 
 
 
