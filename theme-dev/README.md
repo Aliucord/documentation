@@ -9,7 +9,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
     1. [Manifest Strings](#manifest-strings)
     2. [Background Strings](#background-strings)
     3. [Font Strings](#font-strings)
-    4. [Allowed URLs](#urls-allowed-to-be-used-with-themer)
+    4. [Allowed URLs](#allowed-urls)
 3. [Simple Strings](#simple-strings)
 4. [Accent Strings](#accent-strings)
 5. [Primary Strings](#primary-strings)
@@ -59,8 +59,10 @@ Used to show name of the theme, author, etc. They are in the "manifest" section 
   "updater": "this is where you put your raw.githubusercontent.com link, if you ever want to update your theme just bump the version number up"
 }
 ```
-When done correctly it should look like this in the json
+When done correctly it should look similar to this in the .JSON
 ![image](https://user-images.githubusercontent.com/84905506/132266565-ff27a087-4e36-48ca-baca-2a1d823939fd.png)
+
+<br />
 
 ### Background Strings
 
@@ -74,8 +76,11 @@ These are the strings for adding a background and also giving it transparency(al
   "blur_radius": "background blur, goes from 0 to 25, 0 being no blur and 25 a lot of blur. yep I cant tell you better"
 }
 ```
-When done correctly it should look like this in the json
+When done correctly it should look similar to this in the .JSON
 ![image](https://user-images.githubusercontent.com/84905506/132266685-eaa4cca8-9d49-449a-bf8b-c17acc9d3270.png)
+
+<br />
+
 ### Font Strings
 
 The string for the font URL. The string is located in the "fonts" section in the .json
@@ -92,12 +97,13 @@ The string for the font URL. The string is located in the "fonts" section in the
   "whitney_semibold": "changes selected channel name, DM List names, etc"
 }
 ```
-When done correctly it should look like this in the json
+When done correctly it should look similar to this in the .JSON
 ![image](https://user-images.githubusercontent.com/84905506/132266358-3d8e34da-622d-49d9-b74a-d7dd1d413ee6.png)
 
+<br />
 
-### URLs allowed to be used with Themer
-These are the links allowed to be used with Themer, any other link besides ones listed below will not load.
+## Allowed URLs
+These are the links allowed to be used with Themer, any other URL besides ones listed below will not load.
 
 
 * github.com
