@@ -113,17 +113,17 @@ These are the links allowed to be used with Themer, any other link besides ones 
 
 # Simple Strings
 
-> These are the simple strings, don't use them if you don't want to change multiple strings with the same color.
+> These are the Simple Strings, don't use them if you don't want to change multiple strings with the same color.
 
 
 | String | Purpose |
 | --------- | :----------------------- |
-| background | changes the main backgrounds |
-| background_secondary | changes secondary backgrounds |
-| mention_highlight | changes the mention highlight on a message you got pinged in |
-| active_channel | changes nothing as far as I see |
-| statusbar | changes the color of the the status bar where your battery icon is located, time clock, etc |
-| input_background | changes the background of places where you can enter text, for example: Notes in a user profile, Role name enter |
+| background | Main Backgrounds |
+| background_secondary | Secondary Backgrounds |
+| mention_highlight | Mention Highlight on messages you've been pinged in |
+| active_channel | Selected Channel|
+| statusbar | Status Bar (Where Notifications, Bluetooth, Battery, etc... icons are located) |
+| input_background | Background of Input Boxes (Discord Login, Search Box, etc...) |
 
 
 * Normal Strings take priority over Simple Strings so if a String grouped in with a Simple String is changed, that individual changed string will be prioritized.
