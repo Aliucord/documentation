@@ -292,6 +292,17 @@ https://gist.github.com/Vendicated/7e8aa7b2512b8e38e041692cbf34acfa
 <br />
 <br />
 
+# Troubleshooting
+- Chat Box and other UI elements not changing colors
+> [Putting Aliucord in Debuggable mode](https://discord.com/channels/811255666990907402/811261478875299840/880209338520731718) may help fix this issue
+- Background color not changing
+> Unfortunately sometimes this depends on your ROM
+- Background image not changing
+> Please check that you've used an allowed link and have transparency enabled
+
+<br />
+<br />
+
 ### Credits
 - Fred - Fixing spelling errors
 - Soulz - Font Strings Research
