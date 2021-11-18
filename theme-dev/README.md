@@ -47,7 +47,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 > Strings used for the plugin to tell the user what the name of the theme is, author, version, License, etc but also things like custom font and custom background
 
 
-### Manifest Strings
+## Manifest Strings
 
 Used to show name of the theme, author, etc. They are in the "manifest" section in the .json
 ```json
@@ -64,7 +64,7 @@ When done correctly it should look similar to this in the .JSON
 
 <br />
 
-### Background Strings
+## Background Strings
 
 These are the strings for adding a background and also giving it transparency(alpha). They are in the "background" section in the .json
 
@@ -81,7 +81,7 @@ When done correctly it should look similar to this in the .JSON
 
 <br />
 
-### Font Strings
+## Font Strings
 
 The string for the font URL. The string is located in the "fonts" section in the .json
 ```json
