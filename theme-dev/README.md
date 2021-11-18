@@ -189,6 +189,7 @@ Primary strings are used for both dark and light mode, used for smaller things
 | uikit_btn_bg_color_selector_green | change color for the online icon |
 | uikit_btn_bg_color_selector_red | changes the ping color and in plugin list the uninstall button, also changes color for the "NEW MESSAGES" in chat |
 | uikit_settings_item_text_color_dark | secondary text color |
+| uikit_settings_item_text_color_light | changes the color of the 'Invite Members' button, background of stream icon, background of events icon, text placeholder blobs when the members list is loading, some buttons, and tabs (best seen on ongoing events.) |
 
 <br />
 <br />
