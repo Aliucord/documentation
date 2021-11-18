@@ -14,7 +14,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 8. [Material You](#material-you)
     1. [Getting Started](#getting-started)
     2. [Adding Material You Colors](#adding-material-you-colors)
-9. [Random Things which may change over time, and also some resources which might help](#random-things)
+9. [Random Things](#random-things)
     1. [Advanced Resources](#advanced-resources)
     2. [Light Mode Theming](#light-mode-theming)
 <br />
