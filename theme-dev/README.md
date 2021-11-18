@@ -7,7 +7,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
     1. [Creating a Simple Theme](#creating-a-simple-theme)
 2. [Main Strings](#main-strings)
     1. [Manifest Strings](#manifest-strings)
-    2. [Background Strings](#background-strings)
+    2. [Background Image Strings](#background-image-strings)
     3. [Font Strings](#font-strings)
     4. [Allowed URLs](#allowed-urls)
 3. [Simple Strings](#simple-strings)
@@ -44,7 +44,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 
 # Main Strings
 
-> Strings used for the plugin to tell the user what the name of the theme is, author, version, License, etc but also things like custom font and custom background
+> Strings used for the plugin to tell the user what the name of the Theme is, Author, Version, License, etc but also things like custom font and custom background
 
 
 ## Manifest Strings
@@ -64,7 +64,7 @@ If done correctly it should look similar to this in the .JSON
 
 <br />
 
-## Background Strings
+## Background Image Strings
 
 These are the strings for adding a background and also giving it transparency(alpha). They are in the "background" section in the .json
 
