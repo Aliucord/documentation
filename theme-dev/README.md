@@ -145,7 +145,7 @@ These are the links allowed to be used with Themer, any other link besides ones 
 | brand up to 900 | Old Brand Colors (this string isn't used anymore, so it's useless) |
 | brand_new up to 900 | New Brand Colors |
 | brand_new | Accent Color |
-| brand_new_360 | Changes the typing Cursor Color, bare in mind this WILL change the Nitro Text color in the settings, the turned on switch (best seen in plugins page) and probably more |
+| brand_new_360 | Cursor Color, Nitro Text Color in the settings, turned on switch, etc... |
 | brand_new 230 to 630 | Accent Colors for Buttons, Bot Tags, and On/Off Sliders. |
 | brand_new_560 | Changes the Reaction Clicked Border |
 | link | Link Colors |
