@@ -4,6 +4,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 > Some things may apply to the XPosed Module too
 
 1. [Small Introduction](#small-introduction)
+    1. [Creating a Simple Theme](#creating-a-simple-theme)
 2. [Main Strings](#main-strings)
 3. [Simple Strings](#simple-strings)
 4. [Accent Strings](#accent-strings)
@@ -24,13 +25,14 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 
  **DIRECTLY MODIFY THE JSON FILE AT YOUR OWN RISK, YOU WILL LIKELY FUCK SOMETHING UP**
 
-<details>
- <summary>Creating a simple theme</summary>
+
+### Creating a Simple Theme
  
-  * Start by making a new theme inside of the themer plugin settings, give it a name and it will set version and author automatically for you.
+  * Start by making a new Theme inside of the Themer Plugin settings, give it a name and it will set Version, and Author (You) automatically for you.
  * You will see multiple categories, choose the Simple Colors category and click on the + icon to add a new string. Add a `background` string and give it some color by clicking on it. 
  * Save, then select restart to see how it looks!
- * [Example Simple Colors Theme](https://cdn.discordapp.com/attachments/824357609778708580/865289689363251210/DiscordThemer_ZelkButBasic.json)
+
+[Download Example Theme](https://cdn.discordapp.com/attachments/824357609778708580/865289689363251210/DiscordThemer_ZelkButBasic.json)
 </details>
 <br />
 <br />
@@ -254,6 +256,8 @@ Note: Strings are wrapped into double quotes, so your theme should end up lookin
 ```
 
 More detailed explanation can be found [here](https://discord.com/channels/811255666990907402/868419532992172073/898303519394758706).
+
+[Download Example Theme](https://github.com/MrSpidercat/Matu/releases/download/Release/matu-dark.json)
 
 
 
