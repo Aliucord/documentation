@@ -211,18 +211,21 @@ Primary strings are used for both dark and light mode, used for smaller things
 | drawable_voice_user_background_speaking | speaking background, I don't know how to better explain it |
 | drawable_voice_sensitivity_progress | the progress bar for when you test out your mic sens |
 | ic_ban_red_24dp | the ban icon color, kind of pointless tbh and no I don't know what the kick icon color string like at all |
+| ic_sidebar_notications_off_dark_24dp | color of the notification icon in the sidebar when you have the channel muted |
+| ic_sidebar_notications_on_dark_24dp | color of the notification icon in the sidebar when you have the channel isn't muted |
+| ic_thread | color of the threads icon in the sidebar |
 
 <br />
 <br />
 
 # Material You
 
-Material You is a new project by Google that tries to unify android themeing and make one global style that applies to all apps. 
+> Material You is a new project by Google that tries to unify android themeing and make one global style that applies to all apps. 
 It was added in Android 12, so you will need Android 12. [Learn more](https://material.io/blog/announcing-material-you)
 
-The themer plugin has support for it, allowing you to make themes that adapt to your system. 
+> The themer plugin has support for it, allowing you to make themes that adapt to your system. 
 
-This requires directly modifying the JSON file, so you will have to familiarise yourself with JSON.
+> This requires directly modifying the JSON file, so you will have to familiarise yourself with JSON.
 
 
 ### Getting Started
@@ -274,7 +277,7 @@ More detailed explanation can be found [here](https://discord.com/channels/81125
 # Random Things
 ### Advanced Resources
 
-* This link by ven might help you if you know what you are doing
+* This link by Ven might help you if you know what you're doing.
 
 https://gist.github.com/Vendicated/7e8aa7b2512b8e38e041692cbf34acfa
 
