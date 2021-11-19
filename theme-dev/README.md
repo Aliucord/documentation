@@ -1,8 +1,9 @@
 # Themer Documentation
 
-Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicated/AliucordPlugins/tree/main/Themer)
-> Some things may apply to the [XPosed Module](https://github.com/Aliucord/DiscordThemer) too
-
+<details>
+    <summary>Table of Contents</summary>
+    
+___
 1. [Small Introduction](#small-introduction)
     1. [Creating a Simple Theme](#creating-a-simple-theme)
 2. [Main Strings](#main-strings)
@@ -23,12 +24,15 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
     1. [Advanced Resources](#advanced-resources)
     2. [Light Mode Theming](#light-mode-theming)
 10. [Troubleshooting](#troubleshooting)
-<br />
-<br />
+___
+</details>
 
-# Small Introduction
+Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicated/AliucordPlugins/tree/main/Themer)
+> Some things may apply to the [XPosed Module](https://github.com/Aliucord/DiscordThemer) too
 
- **DIRECTLY MODIFY THE JSON FILE AT YOUR OWN RISK, YOU WILL LIKELY FUCK SOMETHING UP**
+## Small Introduction
+
+**DIRECTLY MODIFY THE JSON FILE AT YOUR OWN RISK, YOU WILL LIKELY FUCK SOMETHING UP**
 
 
 ### Creating a Simple Theme
@@ -39,15 +43,14 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 
 [Download Example Theme](https://cdn.discordapp.com/attachments/824357609778708580/865289689363251210/DiscordThemer_ZelkButBasic.json)
 
-<br />
-<br />
+  
 
-# Main Strings
+## Main Strings
 
 > Strings used for the plugin to tell the user what the name of the Theme is, Author, Version, License, etc but also things like custom font and custom background
 
 
-## Manifest Strings
+### Manifest Strings
 
 Used to show name of the theme, author, etc. They are in the "manifest" section in the .json
 ```json
@@ -62,9 +65,9 @@ Used to show name of the theme, author, etc. They are in the "manifest" section 
 If done correctly it should look similar to this in the .JSON
 ![image](https://user-images.githubusercontent.com/84905506/132266565-ff27a087-4e36-48ca-baca-2a1d823939fd.png)
 
-<br />
+  
 
-## Background Image Strings
+### Background Image Strings
 
 These are the strings for adding a background and also giving it transparency(alpha). They are in the "background" section in the .json
 
@@ -79,9 +82,9 @@ These are the strings for adding a background and also giving it transparency(al
 If done correctly it should look similar to this in the .JSON
 ![image](https://user-images.githubusercontent.com/84905506/132266685-eaa4cca8-9d49-449a-bf8b-c17acc9d3270.png)
 
-<br />
+  
 
-## Font Strings
+### Font Strings
 
 The string for the font URL. The string is located in the "fonts" section in the .json
 ```json
@@ -100,10 +103,11 @@ The string for the font URL. The string is located in the "fonts" section in the
 If done correctly it should look similar to this in the .JSON
 ![image](https://user-images.githubusercontent.com/84905506/132266358-3d8e34da-622d-49d9-b74a-d7dd1d413ee6.png)
 
-<br />
+  
 
-## Allowed URLs
-These are the links allowed to be used with Themer, any other URL besides ones listed below will not load.
+### Allowed URLs
+Only the links listed below are accepted for external resources. Other links will refuse to load.
+This is for security and privacy reasons.
 
 
 * github.com
@@ -114,17 +118,13 @@ These are the links allowed to be used with Themer, any other URL besides ones l
 * i.imgur.com
 * i.ibb.co
 
-<br />
-<br />
+  
 
-# Simple Strings
+## Simple Strings
 
-> These are Simple Strings, they change multiple strings at once don't use these if you don't want to change multiple strings at once. 
+These are provided by the Plugin (or Xposed module). They theme many things at once for convenience.
 
 > **Normal strings will take priority over Simple Strings!**
-
-
-
 
 | String | Purpose |
 | --------- | :----------------------- |
@@ -137,13 +137,11 @@ These are the links allowed to be used with Themer, any other URL besides ones l
 
 **If you'd like to know what groups of strings are changed by the strings shown above view [this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135).**
 
-<br />
-<br />
+  
 
-# Accent Strings
+## Accent Strings
 
 > Accent strings are used mostly for Blurple Colors and Link Colors
-
 
 
 | String          | Purpose                 |
@@ -156,10 +154,9 @@ These are the links allowed to be used with Themer, any other URL besides ones l
 | brand_new_560 | Changes the Reaction Clicked Border |
 | link | Link Colors |
 
-<br />
-<br />
+  
 
-# Primary Strings
+## Primary Strings
 
 > Primary dark strings are used for, Chat Background, Server List, Member List, etc... (Only applies to Dark Mode)
 
@@ -176,7 +173,7 @@ These are the links allowed to be used with Themer, any other URL besides ones l
 | primary_dark_800 | The Bottom Bar that houses Friends, Search, Mentions, and Profile Picture icons |
 | primary_dark_700 | Server List |
 
-## General Strings
+### General Strings
 
 > General Strings are used for both dark and light mode, mostly used for smaller things
 
@@ -185,10 +182,9 @@ These are the links allowed to be used with Themer, any other URL besides ones l
 | primary_600 | Server Folders |
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
 
-<br />
-<br />
+  
 
-# UIKit Strings
+## UIKit Strings
 
 > UIKit strings, this will be updated when I figure out more details relating to this.
 
@@ -200,10 +196,9 @@ These are the links allowed to be used with Themer, any other URL besides ones l
 | uikit_settings_item_text_color_dark | Secondary Text Color |
 | uikit_settings_item_text_color_light | changes the color of the 'Invite Members' button, background of streaming icon located on the server icon, background of events icon, text placeholder blobs when the members list is loading, some buttons in context menus, and tabs (best seen in the server event menu.) |
 
-<br />
-<br />
+  
 
-# Drawable Strings
+## Drawable Strings
 
 > Drawable strings, used in places where things change often
 
@@ -224,10 +219,9 @@ These are the links allowed to be used with Themer, any other URL besides ones l
 | ic_sidebar_notications_on_dark_24dp | Notification Icon in the Sidebar when the channel isn't muted |
 | ic_thread | Threads Icon Color located in the Sidebar |
 
-<br />
-<br />
+  
 
-# Material You
+## Material You
 
 > Material You is a new project by Google that tries to unify android themeing and make one global style that applies to all apps. 
 It was added in Android 12, so you will need Android 12. [Learn more](https://material.io/blog/announcing-material-you)
@@ -237,11 +231,11 @@ It was added in Android 12, so you will need Android 12. [Learn more](https://ma
 > This requires directly modifying the JSON file, so you will have to familiarise yourself with JSON.
 
 
-### Getting Started
+#### Getting Started
 
 You are advised to [install this app](https://play.google.com/store/apps/details?id=com.ch3d.material.color), which will allow you to see all colors generated by Material You.
 
-Open the Themer Plugin menu and create a theme, this creates the JSON file that you will use for adding Material You values. 
+Open the Themer Plugin menu and create a theme. This creates the JSON file that you will use for adding Material You values. 
 In the Themer plugin add random colors to all the UI Elements you'd like to change (this saves time later in the process). 
 
 Now that you have that, open the JSON file in your preferred text editor then move on to the next section.
@@ -249,7 +243,7 @@ Now that you have that, open the JSON file in your preferred text editor then mo
 - [Vscode](https://code.visualstudio.com/) (Desktop)
 - [MiXplorer Editor](https://mixplorer.com/) (Mobile)
 
-### Adding Material You Colors
+#### Adding Material You Colors
 
 Material You colors are separated into 5 groups:
 - accent1
@@ -277,13 +271,9 @@ More detailed explanation can be found [here](https://discord.com/channels/81125
 
 [Download Example Theme](https://github.com/MrSpidercat/Matu/releases/download/Release/matu-dark.json)
 
+  
 
-
-<br />
-<br />
-
-
-# Random Things
+## Random Things
 ### Advanced Resources
 
 * This link by Ven might help you if you know what you're doing.
@@ -294,22 +284,15 @@ https://gist.github.com/Vendicated/7e8aa7b2512b8e38e041692cbf34acfa
 
 * As Riyu has found out, a lot of things in Light mode are not themable, but ven did say he will add more light mode support. [Link to Riyu's light mode tests](https://ptb.discord.com/channels/811255666990907402/868419532992172073/902278346195476490)
 
+  
 
-
-
-<br />
-<br />
-
-# Troubleshooting
-- Chat Box and other UI elements not changing colors
-> [Putting Aliucord in Debuggable mode](https://discord.com/channels/811255666990907402/811261478875299840/880209338520731718) may help fix this issue
+## Troubleshooting
 - Background color not changing
 > Unfortunately sometimes this depends on your ROM
 - Background image not changing
 > Please check that you've used an allowed link and have transparency enabled
 
-<br />
-<br />
+  
 
 ### Credits
 - Fred - Fixing spelling errors
@@ -318,7 +301,4 @@ https://gist.github.com/Vendicated/7e8aa7b2512b8e38e041692cbf34acfa
 - Ven - Helping with a few things here and there
 - Karebu - README Rehaul and other things
 
-<br />
-<br />
-
-### **You've reached the end**
+### **You've reached the end!**
