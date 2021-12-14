@@ -183,7 +183,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
 | white_800 | Pop-up message background (when you mute channel) |
 | abc_tint_switch_track | Changes disabled swith track colour |
-| transparent | Inactive button of Emoji/Gif/Stickers and events Event info/Interested button background
+| transparent | Inactive button of (Emoji/Gif/Stickers) and events (Event info/Interested) button backgrounds
 
   
 
