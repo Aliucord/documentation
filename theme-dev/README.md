@@ -191,7 +191,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | uikit_btn_bg_color_selector_brand | Settings Button Color in Plugins list and other areas |
-| uikit_btn_bg_color_selector_green | Online Icon Color and the add servers button in the server list |
+| uikit_btn_bg_color_selector_green | Online Icon Color |
 | uikit_btn_bg_color_selector_red | Ping color, Uninstall button on the Plugins page, and the "NEW MESSAGES" text in chat |
 | uikit_settings_item_text_color_dark | Secondary Text Color |
 | uikit_settings_item_text_color_light | changes the color of the 'Invite Members' button, background of streaming icon located on the server icon, background of events icon, text placeholder blobs when the members list is loading, some buttons in context menus, and tabs (best seen in the server event menu.) |
@@ -209,6 +209,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | drawable_overlay_channels_pressed_dark | Pressed channel color in channel list for dark mode | 
 | item_background_material | mostly used for the top bar(where the name of the plugin, version and author name is written) |
 | design_bottom_navigation_item_background | is used mostly for the bottom part of the plugin page(where description is, uninstall and settings) also themes search box in plugins page |
+| ic_channel_text | Themes the # in the channel name at the top |
 | drawable_button_red | the red NEW↑ in the guild list when you get a ping in a guild |
 | drawable_voice_indicator_speaking | Color of the ring around a profile picture when voice activity is detected |
 | drawable_voice_user_background_speaking | Speaking Background |
@@ -217,30 +218,8 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | ic_sidebar_notications_off_dark_24dp | Notification Icon in the Sidebar when the channel is muted |
 | ic_sidebar_notications_on_dark_24dp | Notification Icon in the Sidebar when the channel isn't muted |
 | ic_thread | Threads Icon Color located in the Sidebar |
-| ic_channel_topic_ellipsis_dark | Themes the expand button in the channel sidebar |
 
-
-
-
-### Channel Icons
-
-
-> Themes the channel icon found at the top bar next to the channel name.
-
-
-| String          | Purpose                 |
-| ---------------- |:-----------------------:|
-| ic_channel_text | Regular text channel |
-| ic_channel_locked | Locked Channel |
-| ic_channel_nsfw | NSFW Channel |
-| ic_channel_announcements | Regular Announcements channel |
-| ic_channel_announcements_locked | Locked Announcements channel |
-| ic_channel_announcements_nsfw | NSFW Announcements channel |
-| ic_channel_announcements_thread | Announcements channel with a thread |
-| ic_channel_announcements_thread_locked | Locked announcements channel with a thread |
-| ic_channel_announcements_thread_nsfw | NSFW announcements channel with a thread |
-
-
+  
 
 ## Material You
 
