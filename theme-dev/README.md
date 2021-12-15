@@ -234,8 +234,8 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | ic_channel_locked | Locked Channel |
 | ic_channel_nsfw | NSFW Channel |
 | ic_channel_announcements | Regular Announcements channel |
-| ic_channel_ | Locked Announcements channel |
-| ic_channel_ | NSFW Announcements channel |
+| ic_channel_announcements_locked | Locked Announcements channel |
+| ic_channel_announcements_nsfw | NSFW Announcements channel |
 | ic_channel_announcements_thread | Announcements channel with a thread |
 | ic_channel_announcements_thread_locked | Locked announcements channel with a thread |
 | ic_channel_announcements_thread_nsfw | NSFW announcements channel with a thread |
