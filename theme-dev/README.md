@@ -169,7 +169,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | primary_dark_630 | Channel List |
 | primary_dark_200 | Text Color for Main Text |
 | primary_dark_400 | "Message #..." color, timestamps, user statuses, UserDetails texts, TextInput placeholders (chat, searchbars), Guild/Category name in search tab, new day divider lines in chat |
-| primary_dark_660 | Chat Box, and Gifts and Attachment icon backgrounds |  
+| primary_dark_660 | Chat Box, code block border color and Gifts and Attachment icon backgrounds |  
 | primary_dark_800 | The Bottom Bar that houses Friends, Search, Mentions, and Profile Picture icons |
 | primary_dark_700 | Server List |
 
@@ -181,6 +181,9 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | ---------------- |:-----------------------:|
 | primary_600 | Server Folders |
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
+| white_800 | Pop-up message background (when you mute channel) |
+| abc_tint_switch_track | Changes disabled swith track colour |
+| transparent |  Inactive button of (Emoji/Gif/Stickers) and events (Event info/Interested) button backgrounds, when there is no internet status bar color in main screens, embedded link alpha background |
 
   
 
@@ -191,10 +194,10 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | uikit_btn_bg_color_selector_brand | Settings Button Color in Plugins list and other areas |
-| uikit_btn_bg_color_selector_green | Online Icon Color and the add servers button in the server list |
+| uikit_btn_bg_color_selector_green | Online Icon Color, add servers button in the server list, in "Invite Members" page invite button outline and text color add friend text colour, live events button background, "Active now"/"live event" text and blob, in Privacy & Safety "Keep me safe" text |
 | uikit_btn_bg_color_selector_red | Ping color, Uninstall button on the Plugins page, and the "NEW MESSAGES" text in chat |
 | uikit_settings_item_text_color_dark | Secondary Text Color |
-| uikit_settings_item_text_color_light | changes the color of the 'Invite Members' button, background of streaming icon located on the server icon, background of events icon, text placeholder blobs when the members list is loading, some buttons in context menus, and tabs (best seen in the server event menu.) |
+| uikit_settings_item_text_color_light | changes the color of the 'Invite Members' button, background of streaming icon located on the server icon, background of events icon, text placeholder blobs when the members list is loading, some buttons in context menus, and tabs (best seen in the server event menu.), input box background (excluding aliucord plugins input boxes) |
 
   
 
