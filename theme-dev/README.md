@@ -196,7 +196,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | uikit_btn_bg_color_selector_brand | Settings Button Color in Plugins list and other areas |
-| uikit_btn_bg_color_selector_green | Online Icon Color, add servers button in the server list, in "Invite Members" page invite button outline and text color add friend text colour, live events button background, "Active now"/"live event" text and blob, in Privacy & Safety "Keep me safe" text |
+| uikit_btn_bg_color_selector_green | Online Icon Color, add servers button in the server list, in "Invite Members" page invite button outline and text color, add friend text colour, live events button background, "Active now"/"live event" text and blob, in Privacy & Safety "Keep me safe" text |
 | uikit_btn_bg_color_selector_red | Ping color, Uninstall button on the Plugins page, and the "NEW MESSAGES" text in chat |
 | uikit_settings_item_text_color_dark | Secondary Text Color |
 | uikit_settings_item_text_color_light | changes the color of the 'Invite Members' button, background of streaming icon located on the server icon, background of events icon, text placeholder blobs when the members list is loading, some buttons in context menus, and tabs (best seen in the server event menu.), input box background (excluding aliucord plugins input boxes) |
