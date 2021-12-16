@@ -165,8 +165,8 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | primary_dark_100 | Chat Scrollbar |
 | primary_dark_300 | Attachments and Emotes icon, DMs button, Discord Navagation Button Colors, Top Bar Icons, Members List Icons (Only Search Icon, and Settings icon. The others you can be found [here](#drawable-strings)) + Text Underneath, Role Names in Members List, Server Name Color in the emotes list, and Icons for Default Emotes. |
 | primary_dark_360 | only in plugin: changes the read channel names and the icon next to them, also changes peoples names in the DM list [example](https://cdn.discordapp.com/attachments/590317150959566849/884594678832455770/Screenshot_20210907-022053.jpg) |
-| primary_dark_600 | Chat Background, and Members List Background |
-| primary_dark_630 | Channel List |
+| primary_dark_600 | Chat Background and Members List Background |
+| primary_dark_630 | Channel List, user profile background and "is typing..." background |
 | primary_dark_200 | Text Color for Main Text |
 | primary_dark_400 | "Message #..." color, timestamps, user statuses, UserDetails texts, TextInput placeholders (chat, searchbars), Guild/Category name in search tab, new day divider lines in chat |
 | primary_dark_660 | Chat Box, Gifts and Attachment icon backgrounds |  
