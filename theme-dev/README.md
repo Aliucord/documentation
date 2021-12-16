@@ -169,7 +169,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | primary_dark_630 | Channel List |
 | primary_dark_200 | Text Color for Main Text |
 | primary_dark_400 | "Message #..." color, timestamps, user statuses, UserDetails texts, TextInput placeholders (chat, searchbars), Guild/Category name in search tab, new day divider lines in chat |
-| primary_dark_660 | Chat Box, code block border color and Gifts and Attachment icon backgrounds |  
+| primary_dark_660 | Chat Box, Gifts and Attachment icon backgrounds |  
 | primary_dark_800 | The Bottom Bar that houses Friends, Search, Mentions, and Profile Picture icons |
 | primary_dark_700 | Server List |
 
@@ -180,6 +180,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | primary_600 | Server Folders |
+| primary_660 | Code block border linke colour |
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
 | primary_700_alpha_60 | In 'Appearance" changes message preview border colour and share sheet selected channel background. This string exclude white theme [example for what it changes](https://media.discordapp.net/attachments/920954913717108746/920957129676963870/1639643689228.jpg)
 | white_800 | Pop-up message background (for example when you mute a channel) |
