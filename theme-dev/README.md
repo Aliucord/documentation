@@ -184,7 +184,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
 | primary_700_alpha_60 | In 'Appearance" changes message preview border colour and share sheet selected channel background. This string exclude white theme [example for what it changes](https://media.discordapp.net/attachments/920954913717108746/920957129676963870/1639643689228.jpg)
 | white_800 | Pop-up message background (for example when you mute a channel) |
-| abc_tint_switch_track | Changes disabled swith track colour |
+| abc_tint_switch_track | Changes disabled switch track colour |
 | transparent |  Inactive button of (Emoji/Gif/Stickers) and events (Event info/Interested) button backgrounds, when there is no internet status bar color in main screens, embedded image alpha background |
 
   
