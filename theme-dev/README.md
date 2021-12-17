@@ -165,11 +165,11 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | primary_dark_100 | Chat Scrollbar |
 | primary_dark_300 | Attachments and Emotes icon, DMs button, Discord Navagation Button Colors, Top Bar Icons, Members List Icons (Only Search Icon, and Settings icon. The others you can be found [here](#drawable-strings)) + Text Underneath, Role Names in Members List, Server Name Color in the emotes list, and Icons for Default Emotes. |
 | primary_dark_360 | only in plugin: changes the read channel names and the icon next to them, also changes peoples names in the DM list [example](https://cdn.discordapp.com/attachments/590317150959566849/884594678832455770/Screenshot_20210907-022053.jpg) |
-| primary_dark_600 | Chat Background, and Members List Background |
-| primary_dark_630 | Channel List |
+| primary_dark_600 | Chat Background and Members List Background |
+| primary_dark_630 | Channel List, discord emoji keyboard background, user profile background and "is typing..." background |
 | primary_dark_200 | Text Color for Main Text |
 | primary_dark_400 | "Message #..." color, timestamps, user statuses, UserDetails texts, TextInput placeholders (chat, searchbars), Guild/Category name in search tab, new day divider lines in chat |
-| primary_dark_660 | Chat Box, and Gifts and Attachment icon backgrounds |  
+| primary_dark_660 | Chat Box, Gifts and Attachment icon backgrounds |  
 | primary_dark_800 | The Bottom Bar that houses Friends, Search, Mentions, and Profile Picture icons |
 | primary_dark_700 | Server List |
 
@@ -180,7 +180,12 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | primary_600 | Server Folders |
+| primary_660 | Code block and embeds border line colour |
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
+| primary_700_alpha_60 | In 'Appearance" changes message preview border colour and share sheet selected channel background. This string exclude white theme [example for what it changes](https://media.discordapp.net/attachments/920954913717108746/920957129676963870/1639643689228.jpg)
+| white_800 | Pop-up message background (for example when you mute a channel) |
+| abc_tint_switch_track | Changes disabled swith track colour |
+| transparent |  Inactive button of (Emoji/Gif/Stickers) and events (Event info/Interested) button backgrounds, when there is no internet status bar color in main screens, embedded image alpha background |
 
   
 
@@ -191,10 +196,10 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | uikit_btn_bg_color_selector_brand | Settings Button Color in Plugins list and other areas |
-| uikit_btn_bg_color_selector_green | Online Icon Color and the add servers button in the server list |
+| uikit_btn_bg_color_selector_green | Online Icon Color, add servers button in the server list, in "Invite Members" page invite button outline and text color, add friend text colour, live events button background, "Active now"/"live event" text and blob, in Privacy & Safety "Keep me safe" text |
 | uikit_btn_bg_color_selector_red | Ping color, Uninstall button on the Plugins page, and the "NEW MESSAGES" text in chat |
 | uikit_settings_item_text_color_dark | Secondary Text Color |
-| uikit_settings_item_text_color_light | changes the color of the 'Invite Members' button, background of streaming icon located on the server icon, background of events icon, text placeholder blobs when the members list is loading, some buttons in context menus, and tabs (best seen in the server event menu.) |
+| uikit_settings_item_text_color_light | changes the color of the 'Invite Members' button, background of streaming icon located on the server icon, background of events icon, text placeholder blobs when the members list is loading, some buttons in context menus, and tabs (best seen in the server event menu.), input box background (excluding aliucord plugins input boxes) |
 
   
 
