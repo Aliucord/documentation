@@ -68,6 +68,11 @@ patcher.patch(Magician.class.getDeclaredMethod("applyMagic", Context.class, Stri
 
 ```kt
 patcher.patch(Magician::class.java.getDeclaredMethod("applyMagic", Context::class.java, String::class.java, Int::class.javaPrimitiveType), myMethodHook)
+// or for convenience one of before, instead or after like so:
+patcher.before<Magician>("applyMagic", ...) {
+    // receiver (this) is correctly typed magician here now so you could do something like
+    someMagicianMethod()
+}
 ```
 </details>
 
@@ -135,7 +140,7 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), InsteadHook.retur
 import com.aliucord.patcher.InsteadHook
 import com.discord.models.user.CoreUser
 
-patcher.patch(CoreUser::class.java.getDeclaredMethod("getUsername"), InsteadHook.returnConstant("Clyde"))
+patcher.instead<CoreUser>("getUsername") { "Clyde" }
 ```
 </details>
 
@@ -164,10 +169,10 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new Hook(methodHo
 import com.aliucord.patcher.Hook
 import com.discord.models.user.CoreUser
 
-patcher.patch(CoreUser::class.java.getDeclaredMethod("getUsername"), Hook {
-    val name = it.getResult() as String?
-    if (name != null && name.equalsIgnoreCase("Clyde")) it.setResult("Evil Clyde");
-})
+patcher.after<CoreUser>("getUsername") {
+    val name = it.result as String?
+    if (name != null && name.equalsIgnoreCase("Clyde")) it.result = "Evil Clyde";
+}
 ```
 </details>
 
@@ -197,11 +202,9 @@ patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), new PreHook(metho
 import com.aliucord.patcher.PreHook
 import com.discord.models.user.CoreUser
 
-patcher.patch(CoreUser.class.getDeclaredMethod("getUsername"), PreHook {
-    val currentUser = it.thisObject as CoreUser;
-    val id = currentUser.getId();
-    if (id == 343383572805058560L) it.setResult("Not Clyde!!");
-})
+patcher.before<CoreUser>("getUsername") {
+    if (id == 343383572805058560L) it.result = "Not Clyde!!";
+}
 ```
 </details>
 
@@ -227,6 +230,6 @@ patcher.patch(StoreUserTyping.class.getDeclaredMethod("setUserTyping", long.clas
 import com.discord.stores.StoreUserTyping
 import top.canyie.pine.callback.InsteadHook
 
-patcher.patch(StoreUserTyping::class.java.getDeclaredMethod("setUserTyping", Long::class.javaPrimitiveType), InsteadHook.DO_NOTHING);
+patcher.instead<StoreUserTyping>("setUserTyping", Long::class.javaPrimitiveType) { null };
 ```
 </details>
