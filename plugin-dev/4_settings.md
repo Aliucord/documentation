@@ -6,11 +6,10 @@ which can be used to persist settings. You can store any data structure here: St
 
 Setting keys are automatically prefixed with your plugin name to prevent collisions.
 
-Settings are stored in `/data/data/com.aliucord/shared_prefs/aliucord.xml`. Thus, they are deleted when the user uninstalls Aliucord.
-If this is undesired, you may manually write to the [Aliucord Path](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord/-constants/-b-a-s-e_-p-a-t-h.html)
-or whichever you deem appropriate.
+Settings are stored per-plugin inside `/Aliucord/settings/[PluginName].json`. 
 
-Avoid storing huge data structures or raw bytes here. Write those to the cache folder or something similar.
+If this is undesired, you may manually write to the [Aliucord Path](https://aliucord.github.io/dokka/html/-aliucord/com.aliucord/-constants/-b-a-s-e_-p-a-t-h.html)
+or whichever you deem appropriate. Avoid storing huge data structures or raw bytes here. Write those to the cache folder or something similar.
 
 
 ## SettingsTab
