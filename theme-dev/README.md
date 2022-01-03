@@ -153,6 +153,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | brand_new 230 to 630 | Accent Colors for Buttons, Bot Tags, and On/Off Sliders. |
 | brand_new_560 | Changes the Reaction Clicked Border |
 | link | Link Colors |
+| link_500 | File upload link color |
 
   
 
@@ -173,6 +174,8 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | primary_dark_800 | The Bottom Bar that houses Friends, Search, Mentions, and Profile Picture icons |
 | primary_dark_700 | Server List |
 
+
+
 ### General Strings
 
 > General Strings are used for both dark and light mode, mostly used for smaller things
@@ -183,6 +186,8 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | primary_660 | Code block and embeds border line colour |
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
 | primary_700_alpha_60 | In 'Appearance" changes message preview border colour and share sheet selected channel background. This string exclude white theme [example for what it changes](https://media.discordapp.net/attachments/920954913717108746/920957129676963870/1639643689228.jpg)
+| white | Server title and white text in the color picker for plugins |
+| white_500 | Unread channels, Server title (overrides white if added after it), White icons in various buttons, text in toast messages, channel name in channel description |
 | white_800 | Pop-up message background (for example when you mute a channel) |
 | abc_tint_switch_track | Changes disabled switch track colour |
 | transparent |  Inactive button of (Emoji/Gif/Stickers) and events (Event info/Interested) button backgrounds, when there is no internet status bar color in main screens, embedded image alpha background |
