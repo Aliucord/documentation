@@ -191,6 +191,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | white_800 | Pop-up message background (for example when you mute a channel) |
 | abc_tint_switch_track | Changes disabled switch track colour |
 | transparent |  Inactive button of (Emoji/Gif/Stickers) and events (Event info/Interested) button backgrounds, when there is no internet status bar color in main screens, embedded image alpha background |
+| dim_foreground_material_light | Prompt background when aliucord needs a restart |
 
   
 
