@@ -192,6 +192,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | abc_tint_switch_track | Changes disabled switch track colour |
 | transparent |  Inactive button of (Emoji/Gif/Stickers) and events (Event info/Interested) button backgrounds, when there is no internet status bar color in main screens, embedded image alpha background |
 | dim_foreground_material_light | Prompt background when aliucord needs a restart |
+| status_grey_200 | Typing indicator three dots |
 
   
 
@@ -229,6 +230,11 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | ic_sidebar_notications_on_dark_24dp | Notification Icon in the Sidebar when the channel isn't muted |
 | ic_thread | Threads Icon Color located in the Sidebar |
 | ic_channel_topic_ellipsis_dark | Themes the expand button in the channel sidebar |
+| ic_content_copy_white_a60_24dp | Copy id Icon |
+| ic_visibility_white_24dp | Mark as read icon |
+| ic_thread_white_24dp | Threads icon when you hold down a channel |
+| ic_notifications_settings_white_a60_24dp | Notifications settings icon when you hold down a channel |
+| ic_account_circle_white_a60_24dp | Profile icon when you hold down a Direct Message |
 
 
 
