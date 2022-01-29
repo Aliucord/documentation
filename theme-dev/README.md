@@ -183,7 +183,8 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | primary_600 | Server Folders |
-| primary_660 | Code block and embeds border line colour |
+| primary_630 | Code block background colour |
+| primary_660 | Code block border line colour |
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
 | primary_700_alpha_60 | In 'Appearance" changes message preview border colour and share sheet selected channel background. This string exclude white theme [example for what it changes](https://media.discordapp.net/attachments/920954913717108746/920957129676963870/1639643689228.jpg)
 | white | Server title and white text in the color picker for plugins |
