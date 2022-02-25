@@ -134,6 +134,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | active_channel | Selected Channel|
 | statusbar | Status Bar (Where Notifications, Bluetooth, Battery, etc... icons are located) |
 | input_background | Background of Input Boxes (Discord Login, Search Box, etc...) |
+| blocked_bg | Background of blocked messages |
 
 **If you'd like to know what groups of strings are changed by the strings shown above view [this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135).**
 
