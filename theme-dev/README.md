@@ -134,6 +134,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | active_channel | Selected Channel|
 | statusbar | Status Bar (Where Notifications, Bluetooth, Battery, etc... icons are located) |
 | input_background | Background of Input Boxes (Discord Login, Search Box, etc...) |
+| blocked_bg | Background of blocked messages |
 
 **If you'd like to know what groups of strings are changed by the strings shown above view [this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135).**
 
@@ -183,7 +184,8 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | primary_600 | Server Folders |
-| primary_660 | Code block and embeds border line colour |
+| primary_630 | Code block background colour |
+| primary_660 | Code block border line colour |
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
 | primary_700_alpha_60 | In dark mode "Appearance" changes message preview border colour and embed border colour , share sheet selected channel background. [example for what it changes] (https://i.imgur.com/mLNuJ77.jpeg) |
 | white | Server title and white text in the color picker for plugins |
@@ -191,6 +193,8 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | white_800 | Pop-up message background (for example when you mute a channel) |
 | abc_tint_switch_track | Changes disabled switch track colour |
 | transparent |  Inactive button of (Emoji/Gif/Stickers) and events (Event info/Interested) button backgrounds, when there is no internet status bar color in main screens, embedded image alpha background |
+| dim_foreground_material_light | Prompt background when aliucord needs a restart |
+| status_grey_200 | Typing indicator three dots |
 
   
 
@@ -228,6 +232,11 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | ic_sidebar_notications_on_dark_24dp | Notification Icon in the Sidebar when the channel isn't muted |
 | ic_thread | Threads Icon Color located in the Sidebar |
 | ic_channel_topic_ellipsis_dark | Themes the expand button in the channel sidebar |
+| ic_content_copy_white_a60_24dp | Copy id Icon |
+| ic_visibility_white_24dp | Mark as read icon |
+| ic_thread_white_24dp | Threads icon when you hold down a channel |
+| ic_notifications_settings_white_a60_24dp | Notifications settings icon when you hold down a channel |
+| ic_account_circle_white_a60_24dp | Profile icon when you hold down a Direct Message |
 
 
 
