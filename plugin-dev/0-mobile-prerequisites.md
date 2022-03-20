@@ -11,4 +11,8 @@
 - 3GB storage (needed for gradle, android sdk & build tools and jdk)
 - [JADX](https://github.com/Juby210/jadx) fork for aliucord (for decompiling discord and finding methods)
 - Gradle (you get it from the plugins template)
-
+- Building: go to root directory of your plugins folder and write 
+```
+sh gradlew pluginname:make
+```
+it will download gradle and compile, it will throw an error but still build
