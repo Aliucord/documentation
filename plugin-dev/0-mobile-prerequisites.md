@@ -16,3 +16,5 @@
 sh gradlew pluginname:make
 ```
 it will download gradle and compile, it will throw an error but still build
+
+[REST OF PLUGIN DOCUMENTATION](/plugin-dev)
