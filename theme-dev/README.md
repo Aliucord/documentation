@@ -183,11 +183,13 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
+| primary_300 | Unrevealed spoiler text background |
 | primary_600 | Server Folders |
 | primary_630 | Code block background colour |
 | primary_660 | Code block border line colour |
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
 | primary_700_alpha_60 | In dark mode "Appearance" changes message preview border colour and embed border colour , share sheet selected channel background. [example for what it changes] (https://i.imgur.com/mLNuJ77.jpeg) |
+| black_alpha_80 | Server name text shadow when there is a server banner |
 | white | Server title and white text in the color picker for plugins |
 | white_500 | Unread channels, Server title (overrides white if added after it), White icons in various buttons, text in toast messages, channel name in channel description |
 | white_800 | Pop-up message background (for example when you mute a channel) |
@@ -228,8 +230,8 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | drawable_voice_user_background_speaking | Speaking Background |
 | drawable_voice_sensitivity_progress | Voice Sensitivity Bar in the Settings |
 | ic_ban_red_24dp | Ban Icon Color |
-| ic_sidebar_notications_off_dark_24dp | Notification Icon in the Sidebar when the channel is muted |
-| ic_sidebar_notications_on_dark_24dp | Notification Icon in the Sidebar when the channel isn't muted |
+| ic_sidebar_notifications_off_dark_24dp | Notification Icon in the Sidebar when the channel is muted |
+| ic_sidebar_notifications_on_dark_24dp | Notification Icon in the Sidebar when the channel isn't muted |
 | ic_thread | Threads Icon Color located in the Sidebar |
 | ic_channel_topic_ellipsis_dark | Themes the expand button in the channel sidebar |
 | ic_content_copy_white_a60_24dp | Copy id Icon |
