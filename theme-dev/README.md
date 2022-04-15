@@ -222,7 +222,9 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | ---------------- |:-----------------------:|
 | drawable_button_grey | unread messages button |
 | drawable_overlay_channels_selected_dark | Selected channel color in channel list for dark mode |
-| drawable_overlay_channels_pressed_dark | Pressed channel color in channel list for dark mode | 
+| drawable_overlay_channels_pressed_dark | Pressed channel color in channel list for dark mode |
+| drawable_bg_reaction_dark | Dark mode reaction background |
+| drawable_bg_highlight | Highlighted message background |
 | item_background_material | mostly used for the top bar(where the name of the plugin, version and author name is written) |
 | design_bottom_navigation_item_background | is used mostly for the bottom part of the plugin page(where description is, uninstall and settings) also themes search box in plugins page |
 | drawable_button_red | the red NEW↑ in the guild list when you get a ping in a guild |
@@ -252,7 +254,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | ic_channel_text | Regular text channel |
-| ic_channel_locked | Locked Channel |
+| ic_channel_text_locked | Locked Channel |
 | ic_channel_nsfw | NSFW Channel |
 | ic_channel_announcements | Regular Announcements channel |
 | ic_channel_announcements_locked | Locked Announcements channel |
