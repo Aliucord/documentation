@@ -184,7 +184,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | primary_300 | Unrevealed spoiler text background |
-| primary_500_alpha_20 | Background color of Spotify status "You played yourself. Wait, you can't."
+| primary_500_alpha_20 | Background color of Spotify status button "You played yourself. Wait, you can't."
 | primary_600 | Server Folders |
 | primary_630 | Code block background color |
 | primary_660 | Code block border line color |
