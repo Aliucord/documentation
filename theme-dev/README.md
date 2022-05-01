@@ -232,6 +232,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | drawable_voice_indicator_speaking | Color of the ring around a profile picture when voice activity is detected |
 | drawable_voice_user_background_speaking | Speaking Background |
 | drawable_voice_sensitivity_progress | Voice Sensitivity Bar in the Settings |
+| drawable_progress_gradient_dark | Progress bar for dark mode file upload |
 | ic_ban_red_24dp | Ban Icon Color |
 | ic_sidebar_notifications_off_dark_24dp | Notification Icon in the Sidebar when the channel is muted |
 | ic_sidebar_notifications_on_dark_24dp | Notification Icon in the Sidebar when the channel isn't muted |
