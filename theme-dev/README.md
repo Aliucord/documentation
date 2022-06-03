@@ -252,7 +252,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | ic_channel_text | Regular text channel |
-| ic_channel_locked | Locked Channel |
+| ic_channel_text_locked | Locked Channel |
 | ic_channel_nsfw | NSFW Channel |
 | ic_channel_announcements | Regular Announcements channel |
 | ic_channel_announcements_locked | Locked Announcements channel |
