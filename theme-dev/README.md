@@ -185,7 +185,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | ---------------- |:-----------------------:|
 | primary_300 | Unrevealed spoiler text background |
 | primary_300_alpha_60 | Controls plugin's better channel icons drawable icon next to channel name |
-| primary_500_alpha_60 | Separation line in settings and connections/plugins
+| primary_500_alpha_60 | Separation line in settings, between servers and dms and connections/plugins
 | primary_600 | Server Folders |
 | primary_630 | Code block background colour |
 | primary_660 | Code block border line colour |
