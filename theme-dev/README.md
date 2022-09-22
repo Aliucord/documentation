@@ -244,7 +244,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | ic_thread_white_24dp | Threads icon when you hold down a channel |
 | ic_settings_white_a60_24dp | Gear icon when you hold down a channel or when opening user panel |
 | ic_notifications_settings_white_a60_24dp | Notifications settings icon when you hold down a channel |
-| ic_person_add_white_a60_24dp | Invite button icon when you hold down a channel|
+| ic_person_add_white_a60_24dp | Invite button icon when you hold down a channel |
 | ic_content_copy_white_a60_24dp | Copy id Icon |
 
 
