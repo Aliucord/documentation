@@ -183,9 +183,11 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
+| color_clicked_darker | Ripple effect when pressed status, user panel and bottom bar |
+| ripple_material_light | Ripple effect when pressed text in chat, user/server settings |
 | primary_300 | Unrevealed spoiler text background |
 | primary_300_alpha_60 | Controls plugin's better channel icons drawable icon next to channel name |
-| primary_500_alpha_60 | Separation line in settings, between servers and dms and connections/plugins
+| primary_500_alpha_60 | Separation line in settings, between servers and dms and connections/plugins |
 | primary_600 | Server Folders |
 | primary_630 | Code block background colour |
 | primary_660 | Code block border line colour |
