@@ -236,11 +236,13 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | ic_sidebar_notifications_on_dark_24dp | Notification Icon in the Sidebar when the channel isn't muted |
 | ic_thread | Threads Icon Color located in the Sidebar |
 | ic_channel_topic_ellipsis_dark | Themes the expand button in the channel sidebar |
-| ic_content_copy_white_a60_24dp | Copy id Icon |
+| ic_account_circle_white_a60_24dp | Profile icon when you hold down a Direct Message |
 | ic_visibility_white_24dp | Mark as read icon |
 | ic_thread_white_24dp | Threads icon when you hold down a channel |
+| ic_settings_white_a60_24dp | Gear icon when you hold down a channel or when opening user panel |
 | ic_notifications_settings_white_a60_24dp | Notifications settings icon when you hold down a channel |
-| ic_account_circle_white_a60_24dp | Profile icon when you hold down a Direct Message |
+| ic_person_add_white_a60_24dp | Invite button icon when you hold down a channel|
+| ic_content_copy_white_a60_24dp | Copy id Icon |
 
 
 
