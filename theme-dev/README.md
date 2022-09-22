@@ -189,6 +189,7 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | primary_660 | Code block border line colour |
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
 | primary_700_alpha_60 | In dark mode "Appearance" changes message preview border colour and embed border colour , share sheet selected channel background. [example for what it changes] (https://i.imgur.com/mLNuJ77.jpeg) |
+| primary_800_alpha_50 | Gif picker alpha mask between gif and text |
 | black_alpha_80 | Server name text shadow when there is a server banner |
 | white | Server title and white text in the color picker for plugins |
 | white_500 | Unread channels, Server title (overrides white if added after it), White icons in various buttons, text in toast messages, channel name in channel description |
