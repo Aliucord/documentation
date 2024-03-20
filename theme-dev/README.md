@@ -37,8 +37,8 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 
 ### Creating a Simple Theme
  
-  * Start by making a new Theme inside of the Themer Plugin settings, give it a name and it will set Version, and Author (You) automatically for you.
- * You will see multiple categories, choose the Simple Colors category and click on the + icon to add a new string. Add a `background` string and give it some color by clicking on it. 
+  * Start by making a new Theme inside of the Themer plugin settings, give it a name and it will set Version, and Author (you) automatically for you.
+ * You will see multiple categories, choose the simple colors category and click on the + icon to add a new string. Add a `background` string and give it some color by clicking on it. 
  * Save, then select restart to see how it looks!
 
 [Download Example Theme](https://cdn.discordapp.com/attachments/824357609778708580/865289689363251210/DiscordThemer_ZelkButBasic.json)
@@ -52,7 +52,7 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 
 ### Manifest Strings
 
-Used to show name of the theme, author, etc. They are in the "manifest" section in the .json
+Used to show name of the theme, author, etc. They are in the "manifest" section of the .json
 ```json
 {
   "name": "the theme name",
@@ -65,28 +65,30 @@ Used to show name of the theme, author, etc. They are in the "manifest" section 
 If done correctly it should look similar to this in the .JSON
 ![image](https://user-images.githubusercontent.com/84905506/132266565-ff27a087-4e36-48ca-baca-2a1d823939fd.png)
 
+
   
 
 ### Background Image Strings
 
-These are the strings for adding a background and also giving it transparency(alpha). They are in the "background" section in the .json
+These are the strings for adding a background and also giving it transparency (alpha). They are in the "background" section of the .json
 
 **Warning: Your Background won't be visible unless you enable transparency!**
 ```json
 {
-  "url": "url for the bg image, recommended and trusted to use cdn.discordapp.com links",
+  "url": "url for the bg image, recommended and trusted to use cdn.discordapp.com links,"
+"(they expire now though, so use something else),"
   "overlay_alpha": "background transparency, goes from 0 to 255, 0 being fully transparent while 255 being fully opaque",
   "blur_radius": "background blur, goes from 0 to 25, 0 being no blur and 25 a lot of blur. yep I cant tell you better"
 }
 ```
 If done correctly it should look similar to this in the .JSON
 ![image](https://user-images.githubusercontent.com/84905506/132266685-eaa4cca8-9d49-449a-bf8b-c17acc9d3270.png)
-
   
 
 ### Font Strings
 
-The string for the font URL. The string is located in the "fonts" section in the .json
+The string for the font URL. The string is in the "fonts" section of the .json. 
+
 ```json
 {
   "*": "This changes the font globally",
@@ -111,10 +113,10 @@ This is for security and privacy reasons.
 
 
 * github.com
-* raw.githubusercontent.com
+* raw.githubusercontent.com 
 * gitlab.com
-* cdn.discordapp.com
-* media.discordapp.net
+* cdn.discordapp.com **(expires)**
+* media.discordapp.net 
 * i.imgur.com
 * i.ibb.co
 
@@ -122,18 +124,18 @@ This is for security and privacy reasons.
 
 ## Simple Strings
 
-These are provided by the Plugin (or Xposed module). They theme many things at once for convenience.
+These are provided by the plugin (or Xposed module). They theme many things at once for convenience.
 
-> **Normal strings will take priority over Simple Strings!**
+> **Normal strings will take priority over simple strings!**
 
 | String | Purpose |
 | --------- | :----------------------- |
-| background | Main Backgrounds |
-| background_secondary | Secondary Backgrounds |
-| mention_highlight | Mention Highlight on messages you've been pinged in |
-| active_channel | Selected Channel|
-| statusbar | Status Bar (Where Notifications, Bluetooth, Battery, etc... icons are located) |
-| input_background | Background of Input Boxes (Discord Login, Search Box, etc...) |
+| background | Main backgrounds |
+| background_secondary | Secondary backgrounds |
+| mention_highlight | Mention highlight on message pings/replies |
+| active_channel | Selected channel |
+| statusbar | Status bar (where notifications, bluetooth, battery, etc... icons are located) |
+| input_background | Background of input boxes (Discord login, search box, etc...) |
 | blocked_bg | Background of blocked messages |
 
 **If you'd like to know what groups of strings are changed by the strings shown above view [this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135).**
@@ -142,38 +144,38 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 
 ## Accent Strings
 
-> Accent strings are used mostly for Blurple Colors and Link Colors
+> Accent strings are used mostly for Blurple colors and Link colors
 
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| brand up to 900 | Old Brand Colors (this string isn't used anymore, so it's useless) |
-| brand_new up to 900 | New Brand Colors |
-| brand_new | Accent Color |
-| brand_new_360 | Cursor Color, Nitro Text Color in the settings, turned on switch, etc... |
-| brand_new 230 to 630 | Accent Colors for Buttons, Bot Tags, and On/Off Sliders. |
-| brand_new_560 | Changes the Reaction Clicked Border |
-| link | Link Colors |
+| brand up to 900 | Old brand colors (this string isn't used anymore, so it's useless) |
+| brand_new up to 900 | New brand Colors |
+| brand_new | Accent color |
+| brand_new_360 | Cursor color, nitro text color in the settings, turned on switch, etc... |
+| brand_new 230 to 630 | Accent color for buttons, bot tags, and On/Off sliders. |
+| brand_new_560 | Changes the reaction clicked border |
+| link | Link colors |
 | link_500 | File upload link color |
 
   
 
 ## Primary Strings
 
-> Primary dark strings are used for, Chat Background, Server List, Member List, etc... (Only applies to Dark Mode)
+> Primary dark strings are used for, chat background, server list, member list, etc... (only applies to Dark Mode)
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| primary_dark_100 | Chat Scrollbar |
-| primary_dark_300 | Attachments and Emotes icon, DMs button, Discord Navagation Button Colors, Top Bar Icons, Members List Icons (Only Search Icon, and Settings icon. The others you can be found [here](#drawable-strings)) + Text Underneath, Role Names in Members List, Server Name Color in the emotes list, and Icons for Default Emotes. |
-| primary_dark_360 | only in plugin: changes the read channel names and the icon next to them, also changes peoples names in the DM list [example](https://cdn.discordapp.com/attachments/590317150959566849/884594678832455770/Screenshot_20210907-022053.jpg) |
-| primary_dark_600 | Chat Background and Members List Background |
-| primary_dark_630 | Channel List, discord emoji keyboard background, user profile background and "is typing..." background |
-| primary_dark_200 | Text Color for Main Text |
+| primary_dark_100 | Chat scrollbar |
+| primary_dark_300 | Attachments and emotes icon, DMs button, Discord navigation button colors, top bar icons, members list icons (only search icon, and settings icon. The others you can be found [here](#drawable-strings)) + text underneath, role names in Members list, server name color in the emotes list, and icons for default emotes. |
+| primary_dark_360 | Only in plugin: changes the read channel names and the icon next to them, also changes peoples names in the DM list [example](https://cdn.discordapp.com/attachments/590317150959566849/884594678832455770/Screenshot_20210907-022053.jpg) |
+| primary_dark_600 | Chat background and Members List background |
+| primary_dark_630 | Channel list, discord emoji keyboard background, user profile background and "is typing..." background |
+| primary_dark_200 | Text color for Main Text |
 | primary_dark_400 | "Message #..." color, timestamps, user statuses, UserDetails texts, TextInput placeholders (chat, searchbars), Guild/Category name in search tab, new day divider lines in chat |
-| primary_dark_660 | Chat Box, Gifts and Attachment icon backgrounds |  
-| primary_dark_800 | The Bottom Bar that houses Friends, Search, Mentions, and Profile Picture icons |
-| primary_dark_700 | Server List |
+| primary_dark_660 | Chat box, gifts and attachment icon backgrounds |  
+| primary_dark_800 | The bottom bar that houses friends, search, mentions, and profile picture icons |
+| primary_dark_700 | Server list |
 
 
 
@@ -184,17 +186,17 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | primary_300 | Unrevealed spoiler text background |
-| primary_600 | Server Folders |
-| primary_630 | Code block background colour |
-| primary_660 | Code block border line colour |
+| primary_600 | Server folders |
+| primary_630 | Code block background color |
+| primary_660 | Code block border line color |
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
-| primary_700_alpha_60 | In dark mode "Appearance" changes message preview border colour and embed border colour , share sheet selected channel background. [example for what it changes] (https://i.imgur.com/mLNuJ77.jpeg) |
+| primary_700_alpha_60 | In dark mode "appearance" changes message preview border colour and embed border colour , share sheet selected channel background. [example for what it changes] (https://i.imgur.com/mLNuJ77.jpeg) |
 | black_alpha_80 | Server name text shadow when there is a server banner |
 | white | Server title and white text in the color picker for plugins |
-| white_500 | Unread channels, Server title (overrides white if added after it), White icons in various buttons, text in toast messages, channel name in channel description |
+| white_500 | Unread channels, server title (overrides white if added after it), white icons in various buttons, text in toast messages, channel name in channel description |
 | white_800 | Pop-up message background (for example when you mute a channel) |
 | abc_tint_switch_track | Changes disabled switch track colour |
-| transparent |  Inactive button of (Emoji/Gif/Stickers) and events (Event info/Interested) button backgrounds, when there is no internet status bar color in main screens, embedded image alpha background |
+| transparent |  Inactive button of (Emoji/Gif/Stickers) and events (event info/interested) button backgrounds, when there is no internet status bar color in main screens, embedded image alpha background |
 | dim_foreground_material_light | Prompt background when aliucord needs a restart |
 | status_grey_200 | Typing indicator three dots |
 
@@ -206,11 +208,11 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| uikit_btn_bg_color_selector_brand | Settings Button Color in Plugins list and other areas |
-| uikit_btn_bg_color_selector_green | Online Icon Color, add servers button in the server list, in "Invite Members" page invite button outline and text color, add friend text colour, live events button background, "Active now"/"live event" text and blob, in Privacy & Safety "Keep me safe" text |
-| uikit_btn_bg_color_selector_red | Ping color, Uninstall button on the Plugins page, and the "NEW MESSAGES" text in chat |
-| uikit_settings_item_text_color_dark | Secondary Text Color |
-| uikit_settings_item_text_color_light | changes the color of the 'Invite Members' button, background of streaming icon located on the server icon, background of events icon, text placeholder blobs when the members list is loading, some buttons in context menus, and tabs (best seen in the server event menu.), input box background (excluding aliucord plugins input boxes) |
+| uikit_btn_bg_color_selector_brand | Settings button color in plugins list and other areas |
+| uikit_btn_bg_color_selector_green | Online icon color, add servers button in the server list, in "Invite Members" page invite button outline and text color, add friend text colour, live events button background, "Active now"/"live event" text and blob, in Privacy & Safety "Keep me safe" text |
+| uikit_btn_bg_color_selector_red | Ping color, Uninstall button on the plugins page, and the "NEW MESSAGES" text in chat |
+| uikit_settings_item_text_color_dark | Secondary text color |
+| uikit_settings_item_text_color_light | Changes the color of the 'Invite Members' button, background of streaming icon located on the server icon, background of events icon, text placeholder blobs when the members list is loading, some buttons in context menus, and tabs (best seen in the server event menu), input box background (excluding aliucord plugins input boxes) |
 
   
 
@@ -220,26 +222,31 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| drawable_button_grey | unread messages button |
+| drawable_button_grey | Unread messages button |
 | drawable_overlay_channels_selected_dark | Selected channel color in channel list for dark mode |
 | drawable_overlay_channels_pressed_dark | Pressed channel color in channel list for dark mode | 
-| item_background_material | mostly used for the top bar(where the name of the plugin, version and author name is written) |
-| design_bottom_navigation_item_background | is used mostly for the bottom part of the plugin page(where description is, uninstall and settings) also themes search box in plugins page |
-| drawable_button_red | the red NEW↑ in the guild list when you get a ping in a guild |
+| item_background_material | Mostly used for the top bar (where the name of the plugin, version and author name is written) |
+| design_bottom_navigation_item_background | Is mainly for the bottom part of the plugin page (where description is, uninstall and settings). Also themes' search box in plugins page |
+| drawable_button_red | The red NEW↑ in the guild list when you get a ping in a guild |
 | drawable_voice_indicator_speaking | Color of the ring around a profile picture when voice activity is detected |
-| drawable_voice_user_background_speaking | Speaking Background |
-| drawable_voice_sensitivity_progress | Voice Sensitivity Bar in the Settings |
-| ic_ban_red_24dp | Ban Icon Color |
-| ic_sidebar_notifications_off_dark_24dp | Notification Icon in the Sidebar when the channel is muted |
-| ic_sidebar_notifications_on_dark_24dp | Notification Icon in the Sidebar when the channel isn't muted |
-| ic_thread | Threads Icon Color located in the Sidebar |
-| ic_channel_topic_ellipsis_dark | Themes the expand button in the channel sidebar |
-| ic_content_copy_white_a60_24dp | Copy id Icon |
+| drawable_voice_user_background_speaking | Speaking background |
+| drawable_voice_sensitivity_progress | Voice sensitivity bar in the settings |
+| ic_ban_red_24dp | Ban icon Color |
+| ic_sidebar_notifications_off_dark_24dp | Notification icon in the sidebar when the channel is muted |
+| ic_sidebar_notifications_on_dark_24dp | Notification icon in the sidebar when the channel isn't muted |
+| ic_thread | Threads icon color located in the sidebar |
+| ic_thread_locked | Locked threads icon in the sidebar |
+| ic_thread_nsfw | NSFW threads icon in the sidebar |
+| ic_channel_topic_ellipsis_dark | Expand button in the channel sidebar |
+| ic_content_copy_white_a60_24dp | Copy id icon |
+| ic_file_download_white_24dp | Download icon for images or regular files |
+| ic_open_in_browser_white_24dp | Open media in browser icon |
+| ic_share_white_a60_24dp | Share image icon |
 | ic_visibility_white_24dp | Mark as read icon |
 | ic_thread_white_24dp | Threads icon when you hold down a channel |
 | ic_notifications_settings_white_a60_24dp | Notifications settings icon when you hold down a channel |
 | ic_account_circle_white_a60_24dp | Profile icon when you hold down a Direct Message |
-
+| icon_save | Icon when saving a theme with themer |
 
 
 
@@ -260,6 +267,32 @@ These are provided by the Plugin (or Xposed module). They theme many things at o
 | ic_channel_announcements_thread | Announcements channel with a thread |
 | ic_channel_announcements_thread_locked | Locked announcements channel with a thread |
 | ic_channel_announcements_thread_nsfw | NSFW announcements channel with a thread |
+| ic_channel_pinned_message | Pin icon in the sidebar on any channel |
+| ic_channel_voice | Voice channel icon in the sidebar |
+| ic_channel_voice_locked | Locked voice channel icon in the sidebar |
+
+
+
+
+### Media Icons
+
+
+
+> Themes the connection icons found under user bio. (dark theme only)
+
+
+| String          | Purpose                 |
+| ---------------- |:-----------------------:|
+| ic_account_github_white_24dp | Github |
+| ic_account_steam_white_24dp | Steam |
+| ic_account_twitter_light_and_dark_24dp | Twitter |
+| ic_account_twitch_light_and_dark_24dp | Twitch |
+| ic_account_spotify_light_and_dark_24dp | Spotify |
+| ic_account_youtube_light_and_dark_24dp | YouTube |
+| ic_account_reddit_light_and_dark_24dp | Reddit |
+| ic_account_xbox_white_24dp | Xbox |
+| ic_account_playstation_white_24dp | Playstation |
+| ic_account_battlenet_light_and_dark_24dp | Battlenet |
 
 
 
@@ -277,8 +310,8 @@ It was added in Android 12, so you will need Android 12. [Learn more](https://ma
 
 You are advised to [install this app](https://play.google.com/store/apps/details?id=com.ch3d.material.color), which will allow you to see all colors generated by Material You.
 
-Open the Themer Plugin menu and create a theme. This creates the JSON file that you will use for adding Material You values. 
-In the Themer plugin add random colors to all the UI Elements you'd like to change (this saves time later in the process). 
+Open the Themer plugin menu and create a theme. This creates the JSON file that you will use for adding Material You values. 
+In the Themer plugin add random colors to all the UI elements you'd like to change (this saves time later in the process). 
 
 Now that you have that, open the JSON file in your preferred text editor then move on to the next section.
 ##### Suggested editors
@@ -326,15 +359,18 @@ https://gist.github.com/Vendicated/7e8aa7b2512b8e38e041692cbf34acfa
 
 * As Riyu has found out, a lot of things in Light mode are not themable, but ven did say he will add more light mode support. [Link to Riyu's light mode tests](https://ptb.discord.com/channels/811255666990907402/868419532992172073/902278346195476490)
 
+## If certain elements on Android 12+ don't get themed
+
+> Due to Android's updates, specific elements in any/all themes might not be colored anymore depending on the device. Some of the important ones: chatbox input background, active dm button background, channel colors (the icons still work) etc. Not to worry, unless you're on Android 12+, they will work for you. Otherwise, it really depends what the device is, but it can happen.
   
 
 ## Troubleshooting
 - Background color not changing
 > Unfortunately sometimes this depends on your ROM
 - Background image not changing
-> Please check that you've used an allowed link and have transparency enabled
+> Please check that you've used an allowed link and have transparency enabled (don't use cdn)
 
-  
+ 
 
 ### Credits
 - Fred - Fixing spelling errors
