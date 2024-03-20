@@ -110,7 +110,7 @@ If done correctly it should look similar to this in the .JSON
 Only the links listed below are accepted for external resources. Other links will refuse to load.
 This is for security and privacy reasons.
 
-Note: cdn links expire as said here: 
+Note: cdn links expire as said [here]: 
 https://discord.com/channels/811255666990907402/857624431148138518/1210912754471411732
 * github.com
 * raw.githubusercontent.com 
