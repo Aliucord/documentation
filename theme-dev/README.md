@@ -225,7 +225,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | drawable_overlay_channels_selected_dark | Selected channel color in channel list for dark mode |
 | drawable_overlay_channels_pressed_dark | Pressed channel color in channel list for dark mode | 
 | item_background_material | Mostly used for the top bar (where the name of the plugin, version and author name is written) |
-| design_bottom_navigation_item_background | Is mainly for the bottom part of the plugin page (where description is, uninstall and settings). Also themes' search box in plugins page |
+| design_bottom_navigation_item_background | Is mainly for the bottom part of the plugin page (where description is, uninstall and settings). Also themes search box in plugins page |
 | drawable_button_red | The red NEW↑ in the guild list when you get a ping in a guild |
 | drawable_voice_indicator_speaking | Color of the ring around a profile picture when voice activity is detected |
 | drawable_voice_user_background_speaking | Speaking background |
