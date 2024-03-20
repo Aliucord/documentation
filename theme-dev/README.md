@@ -75,8 +75,7 @@ These are the strings for adding a background and also giving it transparency (a
 **Warning: Your Background won't be visible unless you enable transparency!**
 ```json
 {
-  "url": "url for the bg image, recommended and trusted to use cdn.discordapp.com links,"
-"(they expire now though, so use something else),"
+  "url": "url for the bg image",
   "overlay_alpha": "background transparency, goes from 0 to 255, 0 being fully transparent while 255 being fully opaque",
   "blur_radius": "background blur, goes from 0 to 25, 0 being no blur and 25 a lot of blur. yep I cant tell you better"
 }
