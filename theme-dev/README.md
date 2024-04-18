@@ -188,7 +188,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | ---------------- |:-----------------------:|
 | primary_300 | Unrevealed spoiler text background, default role color in the "Roles" menu |
 | primary_600 | Server folders |
-| primary_630 | Code block background color |
+| primary_630 | Code block & Monospaced text background color |
 | primary_660 | Code block border line color |
 | primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
 | primary_700_alpha_60 | In dark mode "appearance" changes message preview border colour and embed border colour , share sheet selected channel background. [example for what it changes] (https://i.imgur.com/mLNuJ77.jpeg) |
