@@ -110,11 +110,10 @@ If done correctly it should look similar to this in the .JSON
 Only the links listed below are accepted for external resources. Other links will refuse to load.
 This is for security and privacy reasons.
 
-Note: cdn links shouldn't be used as said [here](https://discord.com/channels/811255666990907402/857624431148138518/1210912754471411732)
+Note: Due to discord having their cdn require authentication, **using `cdn.discordapp.com` and `media.discordapp.net` links will no longer work.** This has broken older themes using these hosts. 
 * github.com
 * raw.githubusercontent.com 
 * gitlab.com
-* media.discordapp.net 
 * i.imgur.com
 * i.ibb.co
 
@@ -150,11 +149,14 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | brand up to 900 | Old brand colors (this string isn't used anymore, so it's useless) |
 | brand_new up to 900 | New brand Colors |
 | brand_new | Accent color |
-| brand_new_360 | Cursor color, nitro text color in the settings, turned on switch, etc... |
 | brand_new 230 to 630 | Accent color for buttons, bot tags, and On/Off sliders. |
+| brand_new_260 | Channel / User mention text
+| brand_new_360 | Cursor color, nitro text color in the settings, turned on switch, etc... |
+| brand_new_500 | Bot Tag
 | brand_new_560 | Changes the reaction clicked border |
 | link | Link colors |
 | link_500 | File upload link color |
+
 
   
 
@@ -164,6 +166,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
+| black_alpha_10 | Image color border |
 | primary_dark_100 | Chat scrollbar |
 | primary_dark_300 | Attachments and emotes icon, DMs button, Discord navigation button colors, top bar icons, members list icons (only search icon, and settings icon. The others you can be found [here](#drawable-strings)) + text underneath, role names in Members list, server name color in the emotes list, and icons for default emotes. |
 | primary_dark_360 | Only in plugin: changes the read channel names and the icon next to them, also changes peoples names in the DM list [example](https://cdn.discordapp.com/attachments/590317150959566849/884594678832455770/Screenshot_20210907-022053.jpg) |
@@ -183,7 +186,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| primary_300 | Unrevealed spoiler text background |
+| primary_300 | Unrevealed spoiler text background, default role color in the "Roles" menu |
 | primary_600 | Server folders |
 | primary_630 | Code block background color |
 | primary_660 | Code block border line color |
