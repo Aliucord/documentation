@@ -149,6 +149,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | brand_new up to 900 | New brand Colors |
 | brand_new | Accent color |
 | brand_new 230 to 630 | Accent color for buttons, bot tags, and On/Off sliders. |
+| brand_500_alpha_20 | Channel / User mention background |
 | brand_new_260 | Channel / User mention text
 | brand_new_360 | Cursor color, nitro text color in the settings, turned on switch, etc... |
 | brand_new_500 | Bot Tag
@@ -165,16 +166,15 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| black_alpha_10 | Image color border |
 | primary_dark_100 | Chat scrollbar |
 | primary_dark_200 | Text color for Main Text |
 | primary_dark_300 | Attachments and emotes icon, DMs button, Discord navigation button colors, top bar icons, members list icons (only search icon, and settings icon. The others you can be found [here](#drawable-strings)) + text underneath, role names in Members list, server name color in the emotes list, and icons for default emotes. |
 | primary_dark_330 | Timestamps, New day divider, "Message #..." color, UserDetails text, User status (friends list, DMs list) "All Servers" text in Recent Mentions, Text input placeholder (DMs, Themer)
 | primary_dark_360 | Channel list text & Categories, "Counters" text |
-| primary_dark_400 | User statuses, TextInput placeholders (chat, searchbars), Guild/Category name in search tab, |
-| primary_dark_600 | Chat background and Members List background |
-| primary_dark_630 | Channel list background, Channel header background, Member list header background, Discord emoji keyboard background, User profile background, "is typing..." background |
-| primary_dark_660 | Chat box, Gifts & Attachment icon backgrounds |  
+| primary_dark_400 | User statuses, TextInput placeholders (chat, searchbars), Server / Category name in search tab, |
+| primary_dark_600 | Chat background & Members List background |
+| primary_dark_630 | Channel list background, Channel header background, Member list header background, Discord emoji keyboard background, User profile background, "is typing..." background, Create server background |
+| primary_dark_660 | Chatbox, Gifts & Attachment icon backgrounds |  
 | primary_dark_700 | Server list |
 | primary_dark_800 | The bottom bar that houses friends, search, mentions, and profile picture icons |
 
@@ -186,15 +186,16 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
+| black_alpha_10 | Image color border |
 | primary_300 | Unrevealed spoiler text background, default role color in the "Roles" menu |
 | primary_600 | Server folders |
 | primary_630 | Code block & Monospaced text background color |
 | primary_660 | Code block border line color |
-| primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
-| primary_700_alpha_60 | In dark mode "appearance" changes message preview border colour and embed border colour , share sheet selected channel background. [example for what it changes] (https://i.imgur.com/mLNuJ77.jpeg) |
-| black_alpha_80 | Server name text shadow when there is a server banner |
-| white | Server title and white text in the color picker for plugins |
-| white_500 | Unread channels, server title (overrides white if added after it), white icons in various buttons, text in toast messages, channel name in channel description |
+| primary_700 | Status (Notifications) bar, Embed background, Top Bar, DMs button, Server streaming icons, Themer bottom bar background, Server name text shadow |
+| primary_700_alpha_60 | Embed border colour, Share sheet selected channel background. [Image] (https://i.imgur.com/mLNuJ77.jpeg) |
+| black_alpha_80 | Server name text shadow (with server banner) |
+| white | Server title (with server banner,) White text in the color picker for plugins |
+| white_500 | Unread channels, Server title (overrides white if added after it), Active channel text, Channel name text (chat, member list) Default username color, white icons in various buttons, text in toast messages, channel name in channel description, "Invite Members" text, etc... |
 | white_800 | Pop-up message background (for example when you mute a channel) |
 | abc_tint_switch_track | Changes disabled switch track colour |
 | transparent |  Inactive button of (Emoji/Gif/Stickers) and events (event info/interested) button backgrounds, when there is no internet status bar color in main screens, embedded image alpha background |
