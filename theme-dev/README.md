@@ -146,14 +146,13 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| brand up to 900 | Old brand colors (this string isn't used anymore, so it's useless) |
 | brand_new up to 900 | New brand Colors |
 | brand_new | Accent color |
 | brand_new 230 to 630 | Accent color for buttons, bot tags, and On/Off sliders. |
 | brand_new_260 | Channel / User mention text
 | brand_new_360 | Cursor color, nitro text color in the settings, turned on switch, etc... |
 | brand_new_500 | Bot Tag
-| brand_new_560 | Changes the reaction clicked border |
+| brand_new_560 | Reaction clicked border |
 | link | Link colors |
 | link_500 | File upload link color |
 
@@ -168,15 +167,16 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | ---------------- |:-----------------------:|
 | black_alpha_10 | Image color border |
 | primary_dark_100 | Chat scrollbar |
-| primary_dark_300 | Attachments and emotes icon, DMs button, Discord navigation button colors, top bar icons, members list icons (only search icon, and settings icon. The others you can be found [here](#drawable-strings)) + text underneath, role names in Members list, server name color in the emotes list, and icons for default emotes. |
-| primary_dark_360 | Only in plugin: changes the read channel names and the icon next to them, also changes peoples names in the DM list [example](https://cdn.discordapp.com/attachments/590317150959566849/884594678832455770/Screenshot_20210907-022053.jpg) |
-| primary_dark_600 | Chat background and Members List background |
-| primary_dark_630 | Channel list, discord emoji keyboard background, user profile background and "is typing..." background |
 | primary_dark_200 | Text color for Main Text |
-| primary_dark_400 | "Message #..." color, timestamps, user statuses, UserDetails texts, TextInput placeholders (chat, searchbars), Guild/Category name in search tab, new day divider lines in chat |
-| primary_dark_660 | Chat box, gifts and attachment icon backgrounds |  
-| primary_dark_800 | The bottom bar that houses friends, search, mentions, and profile picture icons |
+| primary_dark_300 | Attachments and emotes icon, DMs button, Discord navigation button colors, top bar icons, members list icons (only search icon, and settings icon. The others you can be found [here](#drawable-strings)) + text underneath, role names in Members list, server name color in the emotes list, and icons for default emotes. |
+| primary_dark_330 | Timestamps, New day divider, "Message #..." color, UserDetails text, User status (friends list, DMs list) "All Servers" text in Recent Mentions, Text input placeholder (DMs, Themer)
+| primary_dark_360 | Channel list text & Categories, "Counters" text |
+| primary_dark_400 | User statuses, TextInput placeholders (chat, searchbars), Guild/Category name in search tab, |
+| primary_dark_600 | Chat background and Members List background |
+| primary_dark_630 | Channel list background, Channel header background, Member list header background, Discord emoji keyboard background, User profile background, "is typing..." background |
+| primary_dark_660 | Chat box, Gifts & Attachment icon backgrounds |  
 | primary_dark_700 | Server list |
+| primary_dark_800 | The bottom bar that houses friends, search, mentions, and profile picture icons |
 
 
 
