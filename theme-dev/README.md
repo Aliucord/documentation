@@ -141,7 +141,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ## Accent Strings
 
-> Accent strings are used mostly for Blurple colors and Link colors
+> **Accent strings are used mostly for brand colors.**
 
 
 | String          | Purpose                 |
@@ -162,7 +162,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ## Primary Strings
 
-> Primary dark strings are used for, chat background, server list, member list, etc... (only applies to Dark Mode)
+> **Primary dark strings are used for main elements of discord, such as buttons, text and backgrounds.**
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
@@ -182,7 +182,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ### General Strings
 
-> General Strings are used for both dark and light mode, mostly used for smaller things
+> General Strings are used mostly used for smaller things, such as toasts and other text colors.**
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
@@ -206,8 +206,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ## UIKit Strings
 
-> UIKit strings, this will be updated when I figure out more details relating to this.
-
+> UIKit strings are used for brand colors that aren't blurple, along with text and buttons.**
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | uikit_btn_bg_color_selector_brand | Settings button color in plugins list and other areas |
@@ -220,7 +219,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ## Drawable Strings
 
-> Drawable strings, used in places where things change often
+> **Drawable strings are icons / images you see throughout discord.**
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
@@ -256,7 +255,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 ### Channel Icons
 
 
-> Themes the channel icon found at the top bar next to the channel name.
+> **Themes the channel icon found at the top bar next to the channel name.**
 
 
 | String          | Purpose                 |
@@ -279,10 +278,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ### Media Icons
 
-
-
-> Themes the connection icons found under user bio. (dark theme only)
-
+> **Themes the connection icons found under user's about me.**
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
