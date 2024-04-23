@@ -167,8 +167,8 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | primary_dark_100 | Chat scrollbar |
-| primary_dark_200 | Text color for Main Text |
-| primary_dark_300 | Attachments and emotes icon, DMs button, Discord navigation button colors, top bar icons, members list icons (only search icon, and settings icon. The others you can be found [here](#drawable-strings)) + text underneath, role names in Members list, server name color in the emotes list, and icons for default emotes. |
+| primary_dark_200 | Chat text color |
+| primary_dark_300 | Attachments and emotes icon, DMs button, Discord navigation button colors, top bar icons, Search & Settings icon in the member list, Text underneath icons in the member list, role names in Members list, server name color in the emotes list, and icons for default emotes. |
 | primary_dark_330 | Timestamps, New day divider, "Message #..." color, UserDetails text, User status (friends list, DMs list) "All Servers" text in Recent Mentions, Text input placeholder (DMs, Themer)
 | primary_dark_360 | Channel list text & Categories, "Counters" text |
 | primary_dark_400 | User statuses, TextInput placeholders (chat, searchbars), Server / Category name in search tab, |
@@ -224,7 +224,8 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| drawable_button_grey | Unread messages button |
+| drawable_button_grey | "New Unreads" button |
+| drawable_open_folder_dark | Open foloder 
 | drawable_overlay_channels_selected_dark | Selected channel color in channel list for dark mode |
 | drawable_overlay_channels_pressed_dark | Pressed channel color in channel list for dark mode | 
 | item_background_material | Mostly used for the top bar (where the name of the plugin, version and author name is written) |
