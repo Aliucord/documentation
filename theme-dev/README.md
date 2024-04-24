@@ -148,11 +148,10 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | ---------------- |:-----------------------:|
 | brand_new up to 900 | New brand Colors |
 | brand_new | Accent color |
-| brand_new 230 to 630 | Accent color for buttons, bot tags, and On/Off sliders. |
 | brand_500_alpha_20 | Channel / User mention background |
-| brand_new_260 | Channel / User mention text
+| brand_new_260 | Channel / User mention text |
 | brand_new_360 | Cursor color, nitro text color in the settings, turned on switch, etc... |
-| brand_new_500 | Bot Tag
+| brand_new_500 | Bot Tag |
 | brand_new_560 | Reaction clicked border |
 | link | Link colors |
 | link_500 | File upload link color |
@@ -182,7 +181,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ### General Strings
 
-> General Strings are used mostly used for smaller things, such as toasts and other text colors.**
+> **General Strings are used mostly used for smaller things, such as toasts and other text colors.**
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
@@ -206,7 +205,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ## UIKit Strings
 
-> UIKit strings are used for brand colors that aren't blurple, along with text and buttons.**
+> **UIKit strings are used for brand colors that aren't blurple, along with text and buttons.**
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | uikit_btn_bg_color_selector_brand | Settings button color in plugins list and other areas |
