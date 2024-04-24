@@ -32,16 +32,14 @@ Welcome to the Documentation for the [Themer Plugin](https://github.com/Vendicat
 
 ## Small Introduction
 
-**DIRECTLY MODIFY THE JSON FILE AT YOUR OWN RISK, YOU WILL LIKELY FUCK SOMETHING UP**
+**DIRECTLY MODIFY THE JSON FILE AT YOUR OWN RISK**
 
 
 ### Creating a Simple Theme
  
-  * Start by making a new Theme inside of the Themer plugin settings, give it a name and it will set Version, and Author (you) automatically for you.
+ * Start by making a new Theme inside of the Themer plugin settings, give it a name and it will set Version, and Author (you) automatically for you.
  * You will see multiple categories, choose the simple colors category and click on the + icon to add a new string. Add a `background` string and give it some color by clicking on it. 
  * Save, then select restart to see how it looks!
-
-[Download Example Theme](https://cdn.discordapp.com/attachments/824357609778708580/865289689363251210/DiscordThemer_ZelkButBasic.json)
 
   
 
@@ -110,7 +108,7 @@ If done correctly it should look similar to this in the .JSON
 Only the links listed below are accepted for external resources. Other links will refuse to load.
 This is for security and privacy reasons.
 
-Note: Due to discord having their cdn require authentication, **using `cdn.discordapp.com` and `media.discordapp.net` links will no longer work.** This has broken older themes using these hosts. 
+Note: Due to discord having their cdn require authentication, **using `cdn.discordapp.com` and `media.discordapp.net` links will no longer work.** 
 * github.com
 * raw.githubusercontent.com 
 * gitlab.com
@@ -135,7 +133,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | input_background | Background of input boxes (Discord login, search box, etc...) |
 | blocked_bg | Background of blocked messages |
 
-**If you'd like to know what groups of strings are changed by the strings shown above view [this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135).**
+**If you'd like to know what groups of strings are changed by the strings shown above view ![this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135).**
 
   
 
@@ -206,6 +204,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 ## UIKit Strings
 
 > **UIKit strings are used for brand colors that aren't blurple, along with text and buttons.**
+
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | uikit_btn_bg_color_selector_brand | Settings button color in plugins list and other areas |
@@ -368,13 +367,5 @@ https://gist.github.com/Vendicated/7e8aa7b2512b8e38e041692cbf34acfa
 - Background image not changing
 > Please check that you've used an allowed link and have transparency enabled (don't use cdn)
 
- 
-
-### Credits
-- Fred - Fixing spelling errors
-- Soulz - Font Strings Research
-- Riyu - Light Mode Research
-- Ven - Helping with a few things here and there
-- Karebu - README Rehaul and other things
 
 ### **You've reached the end!**
