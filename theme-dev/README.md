@@ -133,7 +133,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | input_background | Background of input boxes (Discord login, search box, etc...) |
 | blocked_bg | Background of blocked messages |
 
-**If you'd like to know what groups of strings are changed by the strings shown above view ![this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135).**
+**If you'd like to know what groups of strings are changed by the strings shown above view [this](https://github.com/Vendicated/AliucordPlugins/blob/1d7ba8900ad6d4cfb17e6be670e273a8b9cee212/Themer/src/main/kotlin/dev/vendicated/aliucordplugs/themer/Constants.kt#L71#135).**
 
   
 
@@ -189,7 +189,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | primary_630 | Code block & Monospaced text background color |
 | primary_660 | Code block border line color |
 | primary_700 | Status (Notifications) bar, Embed background, Top Bar, DMs button, Server streaming icons, Themer bottom bar background, Server name text shadow |
-| primary_700_alpha_60 | Embed border colour, Share sheet selected channel background. [Image] (https://i.imgur.com/mLNuJ77.jpeg) |
+| primary_700_alpha_60 | Embed border colour, Share sheet selected channel background. [Image](https://i.imgur.com/mLNuJ77.jpeg) |
 | black_alpha_80 | Server name text shadow (with server banner) |
 | white | Server title (with server banner,) White text in the color picker for plugins |
 | white_500 | Unread channels, Server title (overrides white if added after it), Active channel text, Channel name text (chat, member list) Default username color, white icons in various buttons, text in toast messages, channel name in channel description, "Invite Members" text, etc... |
