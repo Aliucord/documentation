@@ -110,11 +110,10 @@ If done correctly it should look similar to this in the .JSON
 Only the links listed below are accepted for external resources. Other links will refuse to load.
 This is for security and privacy reasons.
 
-Note: cdn links shouldn't be used as said [here](https://discord.com/channels/811255666990907402/857624431148138518/1210912754471411732)
+Note: Due to discord having their cdn require authentication, **using `cdn.discordapp.com` and `media.discordapp.net` links will no longer work.** This has broken older themes using these hosts. 
 * github.com
 * raw.githubusercontent.com 
 * gitlab.com
-* media.discordapp.net 
 * i.imgur.com
 * i.ibb.co
 
@@ -142,56 +141,60 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ## Accent Strings
 
-> Accent strings are used mostly for Blurple colors and Link colors
+> **Accent strings are used mostly for brand colors.**
 
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| brand up to 900 | Old brand colors (this string isn't used anymore, so it's useless) |
 | brand_new up to 900 | New brand Colors |
 | brand_new | Accent color |
+| brand_500_alpha_20 | Channel / User mention background |
+| brand_new_260 | Channel / User mention text |
 | brand_new_360 | Cursor color, nitro text color in the settings, turned on switch, etc... |
-| brand_new 230 to 630 | Accent color for buttons, bot tags, and On/Off sliders. |
-| brand_new_560 | Changes the reaction clicked border |
+| brand_new_500 | Bot Tag |
+| brand_new_560 | Reaction clicked border |
 | link | Link colors |
 | link_500 | File upload link color |
+
 
   
 
 ## Primary Strings
 
-> Primary dark strings are used for, chat background, server list, member list, etc... (only applies to Dark Mode)
+> **Primary dark strings are used for main elements of discord, such as buttons, text and backgrounds.**
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | primary_dark_100 | Chat scrollbar |
-| primary_dark_300 | Attachments and emotes icon, DMs button, Discord navigation button colors, top bar icons, members list icons (only search icon, and settings icon. The others you can be found [here](#drawable-strings)) + text underneath, role names in Members list, server name color in the emotes list, and icons for default emotes. |
-| primary_dark_360 | Only in plugin: changes the read channel names and the icon next to them, also changes peoples names in the DM list [example](https://cdn.discordapp.com/attachments/590317150959566849/884594678832455770/Screenshot_20210907-022053.jpg) |
-| primary_dark_600 | Chat background and Members List background |
-| primary_dark_630 | Channel list, discord emoji keyboard background, user profile background and "is typing..." background |
-| primary_dark_200 | Text color for Main Text |
-| primary_dark_400 | "Message #..." color, timestamps, user statuses, UserDetails texts, TextInput placeholders (chat, searchbars), Guild/Category name in search tab, new day divider lines in chat |
-| primary_dark_660 | Chat box, gifts and attachment icon backgrounds |  
-| primary_dark_800 | The bottom bar that houses friends, search, mentions, and profile picture icons |
+| primary_dark_200 | Chat text color |
+| primary_dark_300 | Attachments and emotes icon, DMs button, Discord navigation button colors, top bar icons, Search & Settings icon in the member list, Text underneath icons in the member list, role names in Members list, server name color in the emotes list, and icons for default emotes. |
+| primary_dark_330 | Timestamps, New day divider, "Message #..." color, UserDetails text, User status (friends list, DMs list) "All Servers" text in Recent Mentions, Text input placeholder (DMs, Themer)
+| primary_dark_360 | Channel list text & Categories, "Counters" text |
+| primary_dark_400 | User statuses, TextInput placeholders (chat, searchbars), Server / Category name in search tab, |
+| primary_dark_600 | Chat background & Members List background |
+| primary_dark_630 | Channel list background, Channel header background, Member list header background, Discord emoji keyboard background, User profile background, "is typing..." background, Create server background |
+| primary_dark_660 | Chatbox, Gifts & Attachment icon backgrounds |  
 | primary_dark_700 | Server list |
+| primary_dark_800 | The bottom bar that houses friends, search, mentions, and profile picture icons |
 
 
 
 ### General Strings
 
-> General Strings are used for both dark and light mode, mostly used for smaller things
+> **General Strings are used mostly used for smaller things, such as toasts and other text colors.**
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| primary_300 | Unrevealed spoiler text background |
+| black_alpha_10 | Image color border |
+| primary_300 | Unrevealed spoiler text background, default role color in the "Roles" menu |
 | primary_600 | Server folders |
-| primary_630 | Code block background color |
+| primary_630 | Code block & Monospaced text background color |
 | primary_660 | Code block border line color |
-| primary_700 | Spoilers, Embeds, Top Bar, DMs Button, Background for Pings, and server streaming icons |
-| primary_700_alpha_60 | In dark mode "appearance" changes message preview border colour and embed border colour , share sheet selected channel background. [example for what it changes] (https://i.imgur.com/mLNuJ77.jpeg) |
-| black_alpha_80 | Server name text shadow when there is a server banner |
-| white | Server title and white text in the color picker for plugins |
-| white_500 | Unread channels, server title (overrides white if added after it), white icons in various buttons, text in toast messages, channel name in channel description |
+| primary_700 | Status (Notifications) bar, Embed background, Top Bar, DMs button, Server streaming icons, Themer bottom bar background, Server name text shadow |
+| primary_700_alpha_60 | Embed border colour, Share sheet selected channel background. [Image] (https://i.imgur.com/mLNuJ77.jpeg) |
+| black_alpha_80 | Server name text shadow (with server banner) |
+| white | Server title (with server banner,) White text in the color picker for plugins |
+| white_500 | Unread channels, Server title (overrides white if added after it), Active channel text, Channel name text (chat, member list) Default username color, white icons in various buttons, text in toast messages, channel name in channel description, "Invite Members" text, etc... |
 | white_800 | Pop-up message background (for example when you mute a channel) |
 | abc_tint_switch_track | Changes disabled switch track colour |
 | transparent |  Inactive button of (Emoji/Gif/Stickers) and events (event info/interested) button backgrounds, when there is no internet status bar color in main screens, embedded image alpha background |
@@ -202,8 +205,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ## UIKit Strings
 
-> UIKit strings, this will be updated when I figure out more details relating to this.
-
+> **UIKit strings are used for brand colors that aren't blurple, along with text and buttons.**
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | uikit_btn_bg_color_selector_brand | Settings button color in plugins list and other areas |
@@ -216,11 +218,12 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ## Drawable Strings
 
-> Drawable strings, used in places where things change often
+> **Drawable strings are icons / images you see throughout discord.**
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| drawable_button_grey | Unread messages button |
+| drawable_button_grey | "New Unreads" button |
+| drawable_open_folder_dark | Open foloder 
 | drawable_overlay_channels_selected_dark | Selected channel color in channel list for dark mode |
 | drawable_overlay_channels_pressed_dark | Pressed channel color in channel list for dark mode | 
 | item_background_material | Mostly used for the top bar (where the name of the plugin, version and author name is written) |
@@ -251,7 +254,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 ### Channel Icons
 
 
-> Themes the channel icon found at the top bar next to the channel name.
+> **Themes the channel icon found at the top bar next to the channel name.**
 
 
 | String          | Purpose                 |
@@ -274,10 +277,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 
 ### Media Icons
 
-
-
-> Themes the connection icons found under user bio. (dark theme only)
-
+> **Themes the connection icons found under user's about me.**
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
