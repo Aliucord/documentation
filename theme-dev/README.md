@@ -222,7 +222,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
 | drawable_button_grey | "New Unreads" button |
-| drawable_open_folder_dark | Open foloder 
+| drawable_open_folder_dark | Open folder 
 | drawable_overlay_channels_selected_dark | Selected channel color in channel list for dark mode |
 | drawable_overlay_channels_pressed_dark | Pressed channel color in channel list for dark mode | 
 | item_background_material | Mostly used for the top bar (where the name of the plugin, version and author name is written) |
