@@ -193,7 +193,7 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | black_alpha_80 | Server name text shadow (with server banner) |
 | white | Server title (with server banner,) White text in the color picker for plugins |
 | white_500 | Unread channels, Server title (overrides white if added after it), Active channel text, Channel name text (chat, member list) Default username color, white icons in various buttons, text in toast messages, channel name in channel description, "Invite Members" text, etc... |
-| white_800 | Pop-up message background (for example when you mute a channel) |
+| white_800 | Pop-up (known as toasts) message background (for example when you mute a channel) |
 | abc_tint_switch_track | Changes disabled switch track colour |
 | transparent |  Inactive button of (Emoji/Gif/Stickers) and events (event info/interested) button backgrounds, when there is no internet status bar color in main screens, embedded image alpha background |
 | dim_foreground_material_light | Prompt background when aliucord needs a restart |
@@ -247,7 +247,9 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | ic_notifications_settings_white_a60_24dp | Notifications settings icon when you hold down a channel |
 | ic_account_circle_white_a60_24dp | Profile icon when you hold down a Direct Message |
 | icon_save | Icon when saving a theme with themer |
-
+| ic_hypesquad_house1_32dp | Hypesquad House 1 icon |
+| ic_hypesquad_house2_32dp | Hypesquad House 2 icon |
+| ic_hypesquad_house3_32dp | Hypesquad House 3 icon |
 
 
 ### Channel Icons
@@ -290,7 +292,6 @@ These are provided by the plugin (or Xposed module). They theme many things at o
 | ic_account_xbox_white_24dp | Xbox |
 | ic_account_playstation_white_24dp | Playstation |
 | ic_account_battlenet_light_and_dark_24dp | Battlenet |
-
 
 
 ## Material You
