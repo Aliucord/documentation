@@ -7,7 +7,7 @@
   <a href="https://aliucord.github.io/dokka/javadoc/">
     <img alt="javadoc" src="https://img.shields.io/badge/javadoc-%234D7A97?logo=openJDK&logoColor=black&labelColor=%23f89820&style=for-the-badge"><!--
   --></a>
-  <a href="https://aliucord.github.io/dokka/javadoc/">
+  <a href="https://aliucord.github.io/dokka/html/">
     <img alt="Dokka" src="https://img.shields.io/badge/dokka-%2327282C?logo=kotlin&logoColor=%23B125EA&labelColor=%237F52FF&style=for-the-badge">
   </a>
 </p>
